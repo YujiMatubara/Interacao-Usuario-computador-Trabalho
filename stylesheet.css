@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: #0D2149;
+}
+
+.logo
+{
+    font-weight: bold;
+    font-size: 64px;
+    color: #FF6542;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+
+header
+{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0D2149;
+    box-shadow: 0 0 1rem black;
+}
+
+ul
+{
+    display: flex; 
+}
+
+li
+{
+    color: #FF6542;
+    list-style-type: none;
+    cursor: pointer;
+    padding-left: 2rem;
+}
+
+.search-bar
+{
+    width: 100%;
+    max-width: 700px;
+    max-height: 20px;
+    color: #FF6542;
+    align-self: center;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    padding: 10px 20px;
+}
+
+.search-bar input
+{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #FF6542;
+}
+
+.search-bar button
+{
+    border: 0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+::placeholder
+{
+    color: #FF6542;
+}
+
+.header-functions
+{
+    display: flex;
+    align-items: center;
+    padding-right: 60px;
+}
