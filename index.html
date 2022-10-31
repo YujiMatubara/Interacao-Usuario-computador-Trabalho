@@ -1,80 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Pet's Go</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="logo">Pet's Go</div>
+      <div class="logo">Pet's Go</div>
 
-        <div class="search-bar">
-            <input type="text" placeholder="Pesquisar">
-            <button type="submit"><img src="img/search.png" width="20px"></button>
-        </div>
-        
-        <ul class="header-functions">
-            <li>
-                <button type="submit"><img src="img/login.png" width="50px"> Login</button>
-            </li>
-            <li>
-                <button type="submit"><img src="img/cart.png" width="50px"> Carrinho</button>
-            </li>
-        </ul> 
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar" />
+        <button type="submit">
+          <img src="img/search.png" alt="Ícone de uma luneta" width="20px" />
+        </button>
+      </div>
+
+      <ul class="header-functions">
+        <li>
+          <button type="submit">
+            <img
+              src="img/login.png"
+              alt="Ícone de silhueta de uma pessoa"
+              width="50px"
+            />
+            Login
+          </button>
+        </li>
+        <li>
+          <button type="submit">
+            <img src="img/cart.png" alt="Ícone de um carrinho" width="50px" />
+            Carrinho
+          </button>
+        </li>
+      </ul>
     </header>
+
     <nav>
-        <li id="dogs">
-            <!-- Insert dogs dropdown menu -->
-        </li>
-        <li id="cats">
-            <!-- Insert cats dropdown menu -->
-        </li>
-        <li id="birds">
-            <!-- Insert birds dropdown menu -->
-        </li>
+      <li id="dogs">
+        <!-- Insert dogs dropdown menu -->
+      </li>
+      <li id="cats">
+        <!-- Insert cats dropdown menu -->
+      </li>
+      <li id="birds">
+        <!-- Insert birds dropdown menu -->
+      </li>
     </nav>
+
     <div class="acessibility-options">
-        <!-- Insert two buttons -->
+      <!-- Insert two buttons -->
     </div>
+
     <main>
-        <div id="presentation">
-            <div id="presentation-left-arrow" class="arrow-button">
-                <div class="arrow left"></div>
-            </div>
-            <div id="presentation-content"></div>
-            <div id="presentation-right-arrow" class="arrow-button">
-                <div class="arrow right"></div>
-            </div>
+      <div id="presentation">
+        <div id="presentation-left-arrow" class="arrow-button">
+          <div class="arrow left"></div>
         </div>
-        <div id="carousel-title">
-            Mais vendidos
-            <div class="rounded-bar"></div>
+        <div id="presentation-content">
+          <img
+            src="/img/banner-dog.png"
+            alt="Imagem de um cachorro usando óculos"
+            id="banner"
+          />
         </div>
-        <div id="carousel">
-            <div id="carousel-left-arrow" class="arrow-button">
-                <div class="arrow left"></div>
-            </div>
-            <div id="carousel-content">
-                <div class="product-item"></div>
-                <div class="product-item"></div>
-                <div class="product-item"></div>
-                <div class="product-item"></div>
-            </div>
-            <div id="carousel-right-arrow" class="arrow-button">
-                <div class="arrow right"></div>
-            </div>
+        <div id="presentation-right-arrow" class="arrow-button">
+          <div class="arrow right"></div>
         </div>
+      </div>
+      <div id="carousel-title">
+        Mais vendidos
+        <div class="rounded-bar"></div>
+      </div>
+      <div id="carousel">
+        <div id="carousel-left-arrow" class="arrow-button">
+          <div class="arrow left"></div>
+        </div>
+        <div id="carousel-content-wrapper">
+          <div id="carousel-content">
+            <div class="product-item">
+              <img
+                src="/img/dog-food.png"
+                alt="Imagem de um pacote de ração de cachorro"
+                id=""
+              />
+              <p class="product-text">Ração Pedigree para cães adultos</p>
+              <p class="product-text">R$ 55,99</p>
+            </div>
+            <div class="product-item">
+              <img
+                src="/img/bird-waterer.png"
+                alt="Imagem de um bebedouro para pássaros azul claro"
+              />
+              <p class="product-text">Bebedouro para pássaros</p>
+              <p class="product-text">R$ 19,99</p>
+            </div>
+            <div class="product-item">
+              <img
+                src="/img/cat-scratcher.png"
+                alt="Imagem de um arranhador para gatos com bolas e penas"
+              />
+              <p class="product-text">Arranhador para gatos</p>
+              <p class="product-text">R$ 34,99</p>
+            </div>
+            <div class="product-item">
+              <img
+                src="/img/dog-leash.png"
+                alt="Imagem de uma coleira de cachorro de couro vermelho"
+              />
+              <p class="product-text">
+                Coleira peitoral para cachorros grandes
+              </p>
+              <p class="product-text">R$ 19,99</p>
+            </div>
+            <div class="product-item">
+              <img
+                src="/img/bird-cage.png"
+                alt="Imagem de uma gaiola para pássaros azul"
+              />
+              <p class="product-text">Gaiola para calopsitas</p>
+              <p class="product-text">R$ 178,40</p>
+            </div>
+            <div class="product-item">
+              <img
+                src="/img/cat-food.png"
+                alt="Imagem de um pacote de ração de gato"
+              />
+              <p class="product-text">Ração para gatos castrados</p>
+              <p class="product-text">R$ 179,99</p>
+            </div>
+            <div class="product-item">
+              <img
+                src="/img/dog-ball.png"
+                alt="Imagem de bolas coloridas para cachorro"
+              />
+              <p class="product-text">Bola para cachorro</p>
+              <p class="product-text">R$ 5,99</p>
+            </div>
+            <div class="product-item">
+              <div id="see-more">
+                <img src="/img/plus-sign.svg" alt="Ícone de um sinal de mais" />
+                <p>Ver mais</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="carousel-right-arrow" class="arrow-button">
+          <div class="arrow right"></div>
+        </div>
+      </div>
     </main>
+
     <footer>
-        <div id="about-us">
-            <a>Sobre a Pet's go</a>
-        </div>
-        <div id="contact-us">
-            <a>Fale conosco</a>
-        </div>
+      <div id="about-us">
+        <a>Sobre a Pet's go</a>
+      </div>
+      <div id="contact-us">
+        <a>Fale conosco</a>
+      </div>
     </footer>
-</body>
+
+    <script src="app.js"></script>
+  </body>
 </html>
