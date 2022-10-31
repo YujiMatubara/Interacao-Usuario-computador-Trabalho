@@ -97,3 +97,94 @@ li{
 .header-functions button:hover{
     background-color: #ffffff2d;
 }
+
+#presentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 35vw;
+    margin: 10px 0px;
+}
+
+#presentation-content{
+    height: 100%;
+    width: 75%;
+
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.arrow-button{
+    width: 3.0vw;
+    height: 6vw;
+    margin: 1.5vw;
+}
+
+.arrow{
+    width: 0px;
+    height: 0px;
+    position: relative;
+    top: 1.5vw;
+    left: -1.5vw;
+
+    border-left: 3vw solid transparent;
+    border-right: 3vw solid transparent;
+    border-bottom: 3vw solid #0D2149;
+}
+
+.left{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+
+.right{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+#carousel-title{
+    display: inline-flex;
+    padding: 0px 3vw;
+    align-items: center;
+
+    color: #0D2149;
+    font-weight: 600;
+}
+
+.rounded-bar{
+    width: 40vw;
+    height: 7px;
+    border-radius: 50px;
+
+    background-color: #0D2149;
+    margin: 0px 1.5vw
+}
+
+#carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 20vw;
+    margin: 5px 0px;
+}
+
+#carousel-content{
+    height: 100%;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-item{
+    height: 18vw;
+    width: 18vw;
+    border-radius: 10px;
+    margin: 0px 1vw;
+
+    background-color: #0D2149;
+    padding: 0.5vw;
+}
