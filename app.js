@@ -33,8 +33,23 @@ function banner() {
   });
 }
 
+function carousel() {
+  const products = document.getElementById("carousel-content");
+  const leftArrow = document.getElementById("carousel-left-arrow");
+  const rightArrow = document.getElementById("carousel-right-arrow");
+
+  leftArrow.addEventListener("click", () => {
+    products.style.transform = "translateX(0%)";
+  });
+
+  rightArrow.addEventListener("click", () => {
+    products.style.transform = "translateX(-50%)";
+  });
+}
+
 function main() {
   banner();
+  carousel();
 }
 
 main();
