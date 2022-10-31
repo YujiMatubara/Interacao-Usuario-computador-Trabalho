@@ -47,9 +47,41 @@ function carousel() {
   });
 }
 
+function dropdown() {
+  const dogsButton = document.getElementById("dogs");
+  const catsButton = document.getElementById("cats");
+  const birdsButton = document.getElementById("birds");
+
+  const dogsDropdown = document.getElementById("dogs-dropdown");
+  const catsDropdown = document.getElementById("cats-dropdown");
+  const birdsDropdown = document.getElementById("birds-dropdown");
+
+  dogsButton.addEventListener("mouseover", () => {
+    dogsDropdown.style.display = "block";
+  });
+  dogsButton.addEventListener("mouseout", () => {
+    dogsDropdown.style.display = "none";
+  });
+
+  catsButton.addEventListener("mouseover", () => {
+    catsDropdown.style.display = "block";
+  });
+  catsButton.addEventListener("mouseout", () => {
+    catsDropdown.style.display = "none";
+  });
+
+  birdsButton.addEventListener("mouseover", () => {
+    birdsDropdown.style.display = "block";
+  });
+  birdsButton.addEventListener("mouseout", () => {
+    birdsDropdown.style.display = "none";
+  });
+}
+
 function main() {
   banner();
   carousel();
+  dropdown();
 }
 
 main();
