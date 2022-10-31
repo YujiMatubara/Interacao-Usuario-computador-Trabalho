@@ -1,5 +1,5 @@
 function banner() {
-  const bannerSrcs = ["/img/banner-dog.png", "/img/banner-cat.png"];
+  const bannerSrcs = ["img/banner-dog.png", "img/banner-cat.png"];
   const bannerAlts = [
     "Imagem de um cachorro usando óculos",
     "Imagem de um gato escovando os dentes",
