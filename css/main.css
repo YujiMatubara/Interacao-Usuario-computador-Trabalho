@@ -303,6 +303,8 @@ nav {
 
   background-color: #0d2149;
   padding: 0.5vw;
+
+  overflow: hidden;
 }
 
 .product-text {
@@ -310,6 +312,11 @@ nav {
   font-weight: 600;
   line-height: 24px;
   color: #ff6542;
+}
+
+.product-item img {
+  width: 18vw;
+  border-radius: 10px;
 }
 
 #see-more {
