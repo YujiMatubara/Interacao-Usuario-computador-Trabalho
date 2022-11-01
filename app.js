@@ -7,6 +7,7 @@ function banner() {
   let currentIdx = 0;
 
   const bannerImg = document.getElementById("banner");
+  const bannerText = document.getElementById("banner-text");
   const leftArrow = document.getElementById("presentation-left-arrow");
   const rightArrow = document.getElementById("presentation-right-arrow");
 
@@ -19,6 +20,12 @@ function banner() {
 
     bannerImg.src = bannerSrcs[currentIdx];
     bannerImg.alt = bannerAlts[currentIdx];
+
+    if (bannerImg.getAttribute("src") === "img/banner-dog.png") {
+      bannerText.style.opacity = 1;
+    } else {
+      bannerText.style.opacity = 0;
+    }
   });
 
   rightArrow.addEventListener("click", () => {
@@ -30,6 +37,12 @@ function banner() {
 
     bannerImg.src = bannerSrcs[currentIdx];
     bannerImg.alt = bannerAlts[currentIdx];
+
+    if (bannerImg.getAttribute("src") === "img/banner-dog.png") {
+      bannerText.style.opacity = 1;
+    } else {
+      bannerText.style.opacity = 0;
+    }
   });
 }
 
