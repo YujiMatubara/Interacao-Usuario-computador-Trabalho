@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 
 * {
   margin: 0;
@@ -14,9 +15,13 @@ body {
 
 header {
   height: 10vh;
+  width: 100vw;
   display: flex;
   background-color: #0d2149;
   box-shadow: 0 0 1rem black;
+  position: fixed;
+  top: 0;
+  z-index: 11;
 }
 
 ul {
@@ -37,8 +42,11 @@ li {
 .logo {
   width: 30vw;
   min-width: 60px;
-  font-weight: bold;
-  font-size: 3em;
+  font-family: "Luckiest Guy", cursive;
+  font-style: normal;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 64px;
   text-align: left;
   color: #ff6542;
   padding: 0.7rem;
@@ -55,11 +63,14 @@ li {
   max-width: 700px;
   max-height: 20px;
   color: #ff6542;
-  align-self: center;
-  background-color: white;
+  background-color: #f9ebe0;
+  border: 1px solid #ff6542;
   border-radius: 20px;
+  align-self: center;
   display: flex;
-  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 20px;
 }
 
 .search-bar input {
@@ -67,8 +78,8 @@ li {
   flex: 1;
   border: 0;
   outline: none;
-  padding: 10px 20px;
   font-size: 20px;
+  line-height: 24px;
   color: #ff6542;
   width: 100%;
 }
@@ -79,6 +90,12 @@ li {
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+
+.search-bar img {
+  position: relative;
+  bottom: 5px;
+  right: 5px;
 }
 
 .header-functions {
@@ -98,17 +115,21 @@ li {
   width: fit-content;
   height: 100%;
   border: none;
-  background-color: #0d2149;
-  color: #ff6542;
   cursor: pointer;
   transition: 0.25s;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
   overflow: hidden;
   padding: 1vw;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #ff6542;
+  background-color: #0d2149;
 }
 
 .header-functions button:hover {
@@ -122,7 +143,8 @@ li {
 }
 
 nav {
-  margin: 12px 0px;
+  margin-top: 10vh;
+  padding-top: 12px;
 }
 
 .dropdown-list {
