@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 
 * {
   margin: 0;
@@ -14,9 +15,13 @@ body {
 
 header {
   height: 10vh;
+  width: 100vw;
   display: flex;
   background-color: #0d2149;
   box-shadow: 0 0 1rem black;
+  position: fixed;
+  top: 0;
+  z-index: 11;
 }
 
 ul {
@@ -37,8 +42,11 @@ li {
 .logo {
   width: 30vw;
   min-width: 60px;
-  font-weight: bold;
-  font-size: 3em;
+  font-family: "Luckiest Guy", cursive;
+  font-style: normal;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 64px;
   text-align: left;
   color: #ff6542;
   padding: 0.7rem;
@@ -55,11 +63,14 @@ li {
   max-width: 700px;
   max-height: 20px;
   color: #ff6542;
-  align-self: center;
-  background-color: white;
+  background-color: #f9ebe0;
+  border: 1px solid #ff6542;
   border-radius: 20px;
+  align-self: center;
   display: flex;
-  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 20px;
 }
 
 .search-bar input {
@@ -67,8 +78,8 @@ li {
   flex: 1;
   border: 0;
   outline: none;
-  padding: 10px 20px;
   font-size: 20px;
+  line-height: 24px;
   color: #ff6542;
   width: 100%;
 }
@@ -79,6 +90,12 @@ li {
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+
+.search-bar img {
+  position: relative;
+  bottom: 5px;
+  right: 5px;
 }
 
 .header-functions {
@@ -98,17 +115,21 @@ li {
   width: fit-content;
   height: 100%;
   border: none;
-  background-color: #0d2149;
-  color: #ff6542;
   cursor: pointer;
   transition: 0.25s;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
   overflow: hidden;
   padding: 1vw;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #ff6542;
+  background-color: #0d2149;
 }
 
 .header-functions button:hover {
@@ -122,27 +143,46 @@ li {
 }
 
 nav {
-  margin: 12px 0px;
+  margin-top: 10vh;
+  padding-top: 12px;
+  display: flex;
+}
+
+.font-size-adjustment {
+  display: flex;
+  gap: 12px;
+  position: absolute;
+  right: 1vw;
+}
+
+.font-size-adjustment button {
+  height: 70px;
+  border: 0;
+  border-radius: 20px;
+  background-color: #0d2149;
+  padding: 8px 12px;
+  cursor: pointer;
 }
 
 .dropdown-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   width: 100%;
 }
 
 .dropdown-button {
+  z-index: 10;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 
   background-color: #0d2149;
   padding: 10px;
   margin: 0px 5vw;
-  
+
   width: 190px;
   height: 50px;
   border-radius: 20px;
@@ -190,7 +230,7 @@ nav {
 .dropdown-content a {
   width: 150px;
   padding: 10px 0px;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,6 +254,8 @@ nav {
   border-radius: 20px;
   background-color: white;
   box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+
+  position: relative;
 }
 
 #banner {
@@ -221,6 +263,20 @@ nav {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+}
+
+#banner-text {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  color: #0d2149;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-15%, -50%);
 }
 
 .arrow-button {
@@ -260,7 +316,9 @@ nav {
   margin-top: 60px;
 
   color: #0d2149;
+  font-size: 24px;
   font-weight: 600;
+  line-height: 29px;
 }
 
 .rounded-bar {
@@ -342,6 +400,7 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: auto;
 }
 
 footer {
@@ -355,9 +414,12 @@ footer {
   background-color: #0d2149;
   color: #ff6542;
   font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
 }
 
 footer a {
   margin: 0px 2vw;
   text-decoration: underline;
+  cursor: pointer;
 }

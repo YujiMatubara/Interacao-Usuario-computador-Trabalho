@@ -9,18 +9,18 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo">Pet's Go</div>
+      <div class="logo">PET'S GO</div>
 
       <div class="search-bar">
         <input type="text" placeholder="Pesquisar" />
         <button type="submit">
-          <img src="img/search.png" alt="Ícone de uma luneta" width="20px" />
+          <img src="img/magnifying-glass.svg" alt="Ícone de uma luneta" />
         </button>
       </div>
 
       <ul class="header-functions">
         <li>
-          <button type="submit">
+          <button type="button">
             <img
               src="img/login.png"
               alt="Ícone de silhueta de uma pessoa"
@@ -30,7 +30,7 @@
           </button>
         </li>
         <li>
-          <button type="submit">
+          <button type="button">
             <img src="img/cart.png" alt="Ícone de um carrinho" width="50px" />
             Carrinho
           </button>
@@ -41,6 +41,7 @@
     <nav>
       <ul class="dropdown-list">
         <li id="dogs" class="dropdown-button">
+          <img src="img/dog.svg" alt="Ícone de rosto de um cachorro" />
           Cães
           <div id="dogs-dropdown" class="dropdown-menu">
             <div class="arrow"></div>
@@ -56,6 +57,7 @@
           </div>
         </li>
         <li id="cats" class="dropdown-button">
+          <img src="img/cat.svg" alt="Ícone de rosto de um gato" />
           Gatos
           <div id="cats-dropdown" class="dropdown-menu">
             <div class="arrow"></div>
@@ -68,6 +70,7 @@
           </div>
         </li>
         <li id="birds" class="dropdown-button">
+          <img src="img/bird.svg" alt="Ícone de uma ave em perfil" />
           Aves
           <div id="birds-dropdown" class="dropdown-menu">
             <div class="arrow"></div>
@@ -79,6 +82,20 @@
           </div>
         </li>
       </ul>
+      <div class="font-size-adjustment">
+        <button id="font-size-increase"">
+          <img
+            src="img/font-size-increase.svg"
+            alt="Letra A maiúscula ao lado de seta para cima"
+          />
+        </button>
+        <button id="font-size-decrease">
+          <img
+            src="img/font-size-decrease.svg"
+            alt="Letra A maiúscula ao lado de seta para baixo"
+          />
+        </button>
+      </div>
     </nav>
 
     <div class="acessibility-options">
@@ -96,6 +113,10 @@
             alt="Imagem de um cachorro usando óculos"
             id="banner"
           />
+          <p id="banner-text">
+            A loja do seu<br />
+            pet
+          </p>
         </div>
         <div id="presentation-right-arrow" class="arrow-button">
           <div class="arrow right"></div>
