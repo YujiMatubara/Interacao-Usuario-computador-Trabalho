@@ -134,10 +134,11 @@ nav {
 }
 
 .dropdown-button {
+  z-index: 10;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 
   background-color: #0d2149;
   padding: 10px;
