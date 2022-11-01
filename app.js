@@ -91,7 +91,7 @@ function dropdown() {
   });
 }
 
-function fontSizeAdjustment() {
+function fontSizeAdjustment(lowerLimit = 16, upperLimit = 32) {
   const increaseButton = document.getElementById("font-size-increase");
   const decreaseButton = document.getElementById("font-size-decrease");
   const texts = document.getElementsByClassName("font-size");
@@ -105,7 +105,9 @@ function fontSizeAdjustment() {
           .slice(0, 2)
       );
 
-      texts[i].style.fontSize = `${currentFontSize + 4}px`;
+      if (currentFontSize + 4 <= upperLimit) {
+        texts[i].style.fontSize = `${currentFontSize + 4}px`;
+      }
     }
   });
 
@@ -118,7 +120,9 @@ function fontSizeAdjustment() {
           .slice(0, 2)
       );
 
-      texts[i].style.fontSize = `${currentFontSize - 4}px`;
+      if (currentFontSize - 4 >= lowerLimit) {
+        texts[i].style.fontSize = `${currentFontSize - 4}px`;
+      }
     }
   });
 }
