@@ -91,10 +91,43 @@ function dropdown() {
   });
 }
 
+function fontSizeAdjustment() {
+  const increaseButton = document.getElementById("font-size-increase");
+  const decreaseButton = document.getElementById("font-size-decrease");
+  const texts = document.getElementsByClassName("font-size");
+
+  increaseButton.addEventListener("click", () => {
+    for (let i = 0; i < texts.length; i++) {
+      const currentFontSize = Number(
+        window
+          .getComputedStyle(texts[i])
+          .getPropertyValue("font-size")
+          .slice(0, 2)
+      );
+
+      texts[i].style.fontSize = `${currentFontSize + 4}px`;
+    }
+  });
+
+  decreaseButton.addEventListener("click", () => {
+    for (let i = 0; i < texts.length; i++) {
+      const currentFontSize = Number(
+        window
+          .getComputedStyle(texts[i])
+          .getPropertyValue("font-size")
+          .slice(0, 2)
+      );
+
+      texts[i].style.fontSize = `${currentFontSize - 4}px`;
+    }
+  });
+}
+
 function main() {
   banner();
   carousel();
   dropdown();
+  fontSizeAdjustment();
 }
 
 main();
