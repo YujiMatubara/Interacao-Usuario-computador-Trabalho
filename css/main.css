@@ -145,6 +145,23 @@ li {
 nav {
   margin-top: 10vh;
   padding-top: 12px;
+  display: flex;
+}
+
+.font-size-adjustment {
+  display: flex;
+  gap: 12px;
+  position: absolute;
+  right: 1vw;
+}
+
+.font-size-adjustment button {
+  height: 70px;
+  border: 0;
+  border-radius: 20px;
+  background-color: #0d2149;
+  padding: 8px 12px;
+  cursor: pointer;
 }
 
 .dropdown-list {
