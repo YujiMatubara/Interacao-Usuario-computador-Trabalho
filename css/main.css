@@ -397,9 +397,12 @@ footer {
   background-color: #0d2149;
   color: #ff6542;
   font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
 }
 
 footer a {
   margin: 0px 2vw;
   text-decoration: underline;
+  cursor: pointer;
 }
