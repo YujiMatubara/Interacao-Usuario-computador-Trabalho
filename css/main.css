@@ -49,6 +49,7 @@ li {
   font-weight: 400;
   line-height: 64px;
   text-align: left;
+  text-decoration: none;
   color: #ff6542;
   padding: 0.7rem;
 
@@ -360,6 +361,7 @@ nav {
   border-radius: 10px;
   margin: 0px 1vw;
 
+  text-decoration: none;
   background-color: #0d2149;
   padding: 0.5vw;
 
