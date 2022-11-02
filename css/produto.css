@@ -1,6 +1,20 @@
 main {
-  margin-top: 10vh;
+  margin-top: calc(10vh + 12px);
   padding: 0 8vw;
+}
+
+.site-map {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.site-map a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #0d2149;
 }
 
 .container {
@@ -152,7 +166,7 @@ main {
   font-weight: 600;
   line-height: 24px;
   color: #0d2149;
-  cursor: default;
+  cursor: auto;
   padding: 0;
   margin-left: 20px;
 }
