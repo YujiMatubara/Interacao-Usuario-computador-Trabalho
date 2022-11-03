@@ -164,6 +164,8 @@ nav {
   background-color: #0d2149;
   padding: 8px 12px;
   cursor: pointer;
+  padding-top: 2.5em;
+  width: 30%;
 }
 
 .dropdown-list {
