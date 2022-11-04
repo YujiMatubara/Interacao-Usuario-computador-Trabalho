@@ -91,7 +91,7 @@ main {
 }
 
 .plus-minus {
-  width: 15%;
+  width: 100px;
   height: fit-content;
   display: flex;
   justify-content: space-between;
@@ -137,11 +137,15 @@ main {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  color: #ff6542;
   background-color: #0d2149;
   border-radius: 10px;
   padding: 12px;
   cursor: pointer;
+}
+
+#add-cart a {
+  color: #ff6542;
+  text-decoration: none;
 }
 
 .info {

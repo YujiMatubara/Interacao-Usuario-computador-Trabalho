@@ -1,0 +1,161 @@
+.content {
+  display: grid;
+  grid-template-columns: 70% auto;
+  gap: 48px;
+}
+
+.content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.card {
+  background: #d9d9d9;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+button {
+  border: 2px solid #0d2149;
+  border-radius: 10px;
+
+  width: 100%;
+  padding: 10px;
+
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  filter: opacity(0.8);
+}
+
+.main-button {
+  background: #0d2149;
+  color: #ff6542;
+}
+
+.ghost-button {
+  background: transparent;
+  color: #0d2149;
+  border: 2px solid #ff6542;
+}
+
+.ghost-button:hover {
+  background: #ff6542;
+}
+
+.look-up {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.look-up h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #0d2149;
+}
+
+.look-up > div {
+  display: flex;
+  gap: 16px;
+}
+
+.look-up button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  max-width: 100px;
+}
+
+.look-up input {
+  font-family: "Roboto", sans-serif;
+
+  border: 2px solid #0d2149;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.look-up input::placeholder {
+  color: #787878;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.product h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ff6542;
+}
+
+.product h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0d2149;
+}
+
+#delete-button {
+  all: unset;
+  cursor: pointer;
+}
+
+.shipping {
+}
+
+.total-price {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#price-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #0d2149;
+}
+
+.price h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ff6542;
+}
+
+.button-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button-stack button {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.discount {
+}
