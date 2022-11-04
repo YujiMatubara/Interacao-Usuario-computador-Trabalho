@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/produto.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <title>Carrinho | Pet's Go</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="/">PET'S GO</a>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar" class="font-size" />
+        <button type="submit">
+          <img src="img/magnifying-glass.svg" alt="Ícone de uma luneta" />
+        </button>
+      </div>
+
+      <ul class="header-functions">
+        <li>
+          <button type="button" class="font-size">
+            <img
+              src="img/login.png"
+              alt="Ícone de silhueta de uma pessoa"
+              width="50px"
+            />
+            Login
+          </button>
+        </li>
+        <li>
+          <button type="button" class="font-size">
+            <img src="img/cart.png" alt="Ícone de um carrinho" width="50px" />
+            Carrinho
+          </button>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="site-map">
+        <a href="/">Página inicial</a>
+        <img src="../img/arrow-right.svg" alt="Seta para a esquerda" />
+        <a href="#">Carrinho</a>
+      </div>
+
+      <div class="content">
+        <div>
+          <div class="card product">
+            <img
+              src="img/dog-food-small.png"
+              alt="Imagem de um pacote de ração de cachorro"
+            />
+            <h2>Ração Pedigree para cães adultos</h2>
+            <div class="plus-minus">
+              <button>
+                <img src="img/minus.svg" alt="Sinal de menos" />
+              </button>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                placeholder="#"
+                pattern="[0-9]*"
+                title="Quantidade do produto a ser adicionada ao carrinho"
+              />
+              <button><img src="img/plus.svg" alt="Sinal de mais" /></button>
+            </div>
+            <h4>R$ 55,99</h4>
+            <button id="delete-button" title="Excluir">
+              <img
+                src="img/trash-bin.svg"
+                alt="Ícone de lixeira"
+                width="24px"
+              />
+            </button>
+          </div>
+
+          <div class="card look-up shipping">
+            <h2>Frete e prazo</h2>
+            <div>
+              <input type="text" placeholder="CEP" />
+              <button class="main-button">Buscar</button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card total-price">
+            <div id="price-wrapper">
+              <div class="price">
+                <h4>Subtotal (1 produto)</h4>
+                <h4>R$ 55,99</h4>
+              </div>
+              <div class="price">
+                <h2>Total</h2>
+                <h2>R$ 55,99</h2>
+              </div>
+            </div>
+            <div class="button-stack">
+              <button class="main-button">Finalizar a compra</button>
+              <button class="ghost-button">Escolher mais produtos</button>
+            </div>
+          </div>
+
+          <div class="card look-up discount">
+            <h2>Cupom de disconto</h2>
+            <div>
+              <input type="text" placeholder="Insira seu cupom aqui" />
+              <button class="main-button">Aplicar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="about-us">
+        <a class="font-size">Sobre a Pet's go</a>
+      </div>
+      <div id="contact-us">
+        <a class="font-size">Fale conosco</a>
+      </div>
+    </footer>
+  </body>
+</html>

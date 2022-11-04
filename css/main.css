@@ -73,6 +73,7 @@ li {
   align-items: center;
   justify-content: center;
   padding: 13px 20px;
+  position: relative;
 }
 
 .search-bar input {
@@ -94,10 +95,14 @@ li {
   cursor: pointer;
 }
 
+.search-bar button:hover {
+  filter: none;
+}
+
 .search-bar img {
-  position: relative;
+  position: absolute;
   bottom: 5px;
-  right: 5px;
+  right: 7px;
 }
 
 .header-functions {
