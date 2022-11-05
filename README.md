@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://yujimatubara.github.io/Pet-s-Go/">
+  <a href="https://yujimatubara.github.io/Pet-s-Go/" target="_blank" rel="noopener noreferrer">
     <img src="https://imgur.com/ccVaDXY.png" alt="Logo da Pet's Go" />
   </a>
 </div>
