@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="https://imgur.com/ccVaDXY.png" alt="Logo da Pet's Go" />
+  <a href="https://yujimatubara.github.io/Pet-s-Go/">
+    <img src="https://imgur.com/ccVaDXY.png" alt="Logo da Pet's Go" />
+  </a>
 </div>
 
 # Pet's Go
