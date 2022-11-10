@@ -1,5 +1,5 @@
 main {
-  margin-top: calc(10vh + 12px);
+  margin-top: calc(25vh + 12px);
   padding: 0 8vw;
 }
 
@@ -23,6 +23,7 @@ main {
   background-color: #d9d9d9;
 
   display: flex;
+  flex-wrap: wrap;
   gap: 128px;
 }
 
