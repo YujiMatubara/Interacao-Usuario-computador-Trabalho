@@ -1,0 +1,167 @@
+.card {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: fit-content;
+
+  background: #d9d9d9;
+  border-radius: 20px;
+
+  padding: 32px 100px;
+  margin: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+
+  color: #0d2149;
+}
+
+.card-header h4 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+
+  color: #0d2149;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.field label {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+
+  color: #0d2149;
+}
+
+.field input {
+  background: #ffffff;
+  border: 2px solid #0d2149;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.field input::placeholder {
+  color: #787878;
+}
+
+.fields a {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration-line: underline;
+
+  color: #0d2149;
+}
+
+.password-field {
+  background: #ffffff;
+  border: 2px solid #0d2149;
+  border-radius: 10px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.password-field input {
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  width: 30ch;
+}
+
+.password-field button {
+  all: unset;
+  cursor: pointer;
+
+  display: grid;
+  place-items: center;
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-buttons button {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+
+  padding: 4px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.card-buttons button:hover {
+  filter: opacity(0.8);
+}
+
+.main-button {
+  background: #0d2149;
+  color: #ff6542;
+  border: 2px solid #0d2149;
+}
+
+.ghost-button {
+  background: transparent;
+  color: #0d2149;
+  border: 2px solid #ff6542;
+}
+
+.ghost-button:hover {
+  background: #ff6542;
+}
+
+#line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#line span {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+#line::before,
+#line::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  border: 1px solid #000;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="css/produto.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Login | Pet's Go</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="img/logo.svg" alt="Logo da Pet's Go" />
+      </div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar" class="font-size" />
+        <button type="submit">
+          <img src="img/magnifying-glass.svg" alt="Ícone de uma luneta" />
+        </button>
+      </div>
+
+      <ul class="header-functions">
+        <li>
+          <button type="button" class="font-size">
+            <img
+              src="img/login.png"
+              alt="Ícone de silhueta de uma pessoa"
+              width="50px"
+            />
+            <p>Login</p>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="font-size">
+            <img src="img/cart.png" alt="Ícone de um carrinho" width="50px" />
+            <p>Carrinho</p>
+          </button>
+        </li>
+      </ul>
+
+      <div class="font-size-adjustment">
+        <button id="font-size-increase">
+          <img
+            src="img/font-size-increase.svg"
+            alt="Letra A maiúscula ao lado de seta para cima"
+          />
+        </button>
+        <button id="font-size-decrease">
+          <img
+            src="img/font-size-decrease.svg"
+            alt="Letra A maiúscula ao lado de seta para baixo"
+          />
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="site-map">
+        <a href="index.html">Página inicial</a>
+        <img src="img/arrow-right.svg" alt="Seta para a esquerda" />
+        <a href="cart.html">Carrinho</a>
+        <img src="img/arrow-right.svg" alt="Seta para a esquerda" />
+        <a href="#">Login</a>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <img src="img/login.svg" alt="Silhueta de uma pessoa" />
+          <h2>Entre na sua conta</h2>
+          <h4>Identifique-se para continuar sua compra.</h4>
+        </div>
+
+        <div class="fields">
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu e-mail"
+            />
+          </div>
+
+          <div class="field">
+            <label for="password">Senha</label>
+            <div class="password-field">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Digite sua senha"
+              />
+              <button>
+                <img src="img/eye.svg" alt="Olho aberto" />
+              </button>
+            </div>
+          </div>
+
+          <a href="#">Esqueci minha senha</a>
+        </div>
+
+        <div class="card-buttons">
+          <button class="main-button">Entrar</button>
+          <div id="line"><span>Não possui uma conta?</span></div>
+          <button class="ghost-button">Criar conta</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="about-us">
+        <a class="font-size">Sobre a Pet's go</a>
+      </div>
+      <div id="contact-us">
+        <a class="font-size">Fale conosco</a>
+      </div>
+    </footer>
+  </body>
+</html>
