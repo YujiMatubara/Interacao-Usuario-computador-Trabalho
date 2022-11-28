@@ -167,6 +167,7 @@ nav {
   align-items: center;
   gap: 12px;
   right: 1vw;
+  padding-left: 8em;
 }
 
 .font-size-adjustment button {
@@ -174,7 +175,7 @@ nav {
   border: 0;
   border-radius: 20px;
   background-color: #0d2149;
-  padding: 8px 12px;
+  padding: 20px 20px;
   cursor: pointer;
   padding-top: 2.5em;
   width: 30%;
@@ -445,4 +446,66 @@ footer a {
   margin: 0px 2vw;
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px)
+{
+  .font-size-adjustment {
+    gap: 10px;
+    padding-left: 20%;
+  }
+
+  .search-bar {
+    width: 90%;
+    height: 0.7em;
+    border-radius: 20px;
+  }
+
+  .search-bar img {
+    position: absolute;
+    bottom: 2px;
+    right: 15px;
+  }
+
+  .header-functions li {
+    padding: 4px 40px;
+    height: 70%;
+  }
+
+  .header-functions li img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-functions li p {
+    font-size: 0px;
+  }
+
+  .header {
+    height: 190px;
+  }
+
+  nav {
+    margin-top: 22vh;
+    padding-top: 10px;
+    display: flex;
+  }
+  
+  .dropdown-list li {
+    padding: 10px 8px;
+    margin: 6px;
+  };
+  
+  /*arruma aqui pra mim que eu não consegui*/
+  .dropdown-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+  }
+
+  #banner-text {
+    font-size: 22px;
+    line-height: 40px;
+  }
 }
