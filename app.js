@@ -131,16 +131,19 @@ function dropdown() {
       value.button.setAttribute("aria-pressed", "false");
       value.button.setAttribute("aria-expanded", "false");
     });
+
+    value.button.addEventListener("click", () => {
+      const pressed = value.button.getAttribute("aria-pressed") === "true";
+      value.dropdown.style.display = (!pressed) ? "block" : "none";
+      value.dropdown.setAttribute("aria-hidden", pressed);
+      value.button.setAttribute("aria-pressed", !pressed);
+      value.button.setAttribute("aria-expanded", !pressed);
+    })
     
     value.button.addEventListener("keypress", (event) => {
       if (event.key === "Enter" || event.key == " " || event.key == "Spacebar") {
         event.preventDefault();
-  
-        const pressed = value.button.getAttribute("aria-pressed") === "true";
-        value.dropdown.style.display = (!pressed) ? "block" : "none";
-        value.dropdown.setAttribute("aria-hidden", pressed);
-        value.button.setAttribute("aria-pressed", !pressed);
-        value.button.setAttribute("aria-expanded", !pressed);
+        value.button.click();      
       }
     });
   });
