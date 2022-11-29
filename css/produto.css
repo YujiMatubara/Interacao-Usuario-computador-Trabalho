@@ -188,3 +188,55 @@ main {
   gap: 20px;
   margin-bottom: 16px;
 }
+
+@media screen and (max-width: 780px) {
+  main {
+    padding: 0 4vw;
+  }
+  .site-map a {
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 32px 16px;
+    gap: 32px;
+  }
+
+  #product-image {
+    width: 100%;
+  }
+
+  .content h1 {
+    font-size: 32px;
+  }
+
+  .content h2 {
+    font-size: 28px;
+  }
+
+  .button-stack {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #add-cart {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .info {
+    margin-top: 48px;
+  }
+
+  .info ul li {
+    font-size: 16px;
+  }
+
+  #info-title {
+    gap: 10px;
+  }
+
+  #info-title h1 {
+    font-size: 24px;
+  }
+}
