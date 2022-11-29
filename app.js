@@ -65,25 +65,52 @@ function carousel() {
   const leftArrow = document.getElementById("carousel-left-arrow");
   const rightArrow = document.getElementById("carousel-right-arrow");
 
-  Array.from(products.children).forEach((value, index, array) => {
-    value.tabIndex = (index < 4) ? "0" : "-1";
-    value.setAttribute("aria-hidden", !(index < 4));
-  });
+  let currentIndex = 0;
+  let currentSize = 4;
+  let mediaQuery = window.matchMedia("(max-width: 780px)");
+
+  function getNumItems(match) {
+    if (match.matches) {
+      currentSize = 2;
+    } else {
+      currentSize = 4;
+    }
+    console.log(currentSize);
+  }
+
+  getNumItems(mediaQuery);
+  mediaQuery.addEventListener("change", getNumItems);
+
+  function productIsShowing(index) {
+    return (index >= currentIndex && index < (currentIndex + currentSize));
+  }
+
+  function updateItemsShowing() {
+    Array.from(products.children).forEach((value, index, array) => {
+      value.tabIndex = (productIsShowing(index)) ? "0" : "-1";
+      value.setAttribute("aria-hidden", !(productIsShowing(index)));
+    });
+  }
+
+  updateItemsShowing();
+  mediaQuery.addEventListener("change", updateItemsShowing);
 
   leftArrow.addEventListener("click", () => {
-    products.style.transform = "translateX(0%)";
-    Array.from(products.children).forEach((value, index, array) => {
-      value.tabIndex = (index < 4) ? "0" : "-1";
-      value.setAttribute("aria-hidden", !(index < 4));
-    });
+    if ((currentIndex - currentSize) >= 0) {
+      currentIndex -= currentSize;
+    }
+
+    products.style.transform = "translateX(" + (currentIndex * (-12.5)) + "%)";
+    updateItemsShowing();
   });
 
   rightArrow.addEventListener("click", () => {
-    products.style.transform = "translateX(-50%)";
-    Array.from(products.children).forEach((value, index, array) => {
-      value.tabIndex = !(index < 4) ? "0" : "-1";
-      value.setAttribute("aria-hidden", index < 4);
-    });
+    if ((currentIndex + currentSize) < products.children.length) {
+      currentIndex += currentSize;
+    }
+    
+    products.style.transform = "translateX(" + (currentIndex * (-12.5)) + "%)";
+    updateItemsShowing();
   });
 
   leftArrow.addEventListener("keypress", (event) => {
