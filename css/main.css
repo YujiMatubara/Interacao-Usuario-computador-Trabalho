@@ -457,6 +457,32 @@ footer a {/*Letra A maiúscula ao lado de seta para baixo*/
   .header-functions li p {
     font-size: 0px;
   }
+
+  #carousel {
+    height: 34vw;
+    margin: 5px 0px;
+  }
+
+  #carousel-content-wrapper {
+    width: 84vw;
+  }
+
+  #banner-text {
+    font-size: 40px;
+    line-height: 80px;
+  }
+
+  .product-item {
+    height: 30vw;
+    width: 25vw;
+    border-radius: 10px;
+    margin: 0px 1vw;
+  }
+
+  .product-item img {
+    width: 100%;
+    height: 18vw;
+  }
 }
 
 @media screen and (max-width: 780px)
@@ -519,7 +545,7 @@ footer a {/*Letra A maiúscula ao lado de seta para baixo*/
   }
 
   .dropdown-button {
-    padding: 10px 8px;
+    padding: 12px 6px;
     margin: 6px;
     width: 100%;
     display: flex;
@@ -541,7 +567,7 @@ footer a {/*Letra A maiúscula ao lado de seta para baixo*/
   }
 
   .product-item {
-    height: 36vw;
+    height: 40vw;
     width: 30vw;
     border-radius: 10px;
     margin: 0px 1vw;
@@ -553,7 +579,7 @@ footer a {/*Letra A maiúscula ao lado de seta para baixo*/
   }
 
   #carousel {
-    height: 36vw;
+    height: 44vw;
     margin: 5px 0px;
   }
 

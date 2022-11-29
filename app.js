@@ -75,6 +75,7 @@ function carousel() {
     } else {
       currentSize = 4;
     }
+  
     console.log(currentSize);
   }
 
