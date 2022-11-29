@@ -57,44 +57,44 @@
 
     <nav>
       <ul class="dropdown-list">
-        <li id="dogs" class="dropdown-button font-size">
+        <li id="dogs" class="dropdown-button font-size" tabindex="0" role="button" aria-pressed="false" aria-expanded="false">
           <img src="img/dog.svg" alt="Ícone de rosto de um cachorro" />
           Cães
-          <div id="dogs-dropdown" class="dropdown-menu">
+          <div id="dogs-dropdown" class="dropdown-menu" aria-hidden="true">
             <div class="arrow"></div>
             <ul class="dropdown-content font-size">
-              <a>Boutique</a>
-              <a>Petisco</a>
-              <a>Brinquedo</a>
-              <a>Ração</a>
-              <a>Higiene</a>
-              <a>Ambiente</a>
-              <a>Acessório</a>
+              <a tabindex="0">Boutique</a>
+              <a tabindex="0">Petisco</a>
+              <a tabindex="0">Brinquedo</a>
+              <a tabindex="0">Ração</a>
+              <a tabindex="0">Higiene</a>
+              <a tabindex="0">Ambiente</a>
+              <a tabindex="0">Acessório</a>
             </ul>
           </div>
         </li>
-        <li id="cats" class="dropdown-button font-size">
+        <li id="cats" class="dropdown-button font-size" tabindex="0" role="button" aria-pressed="false" aria-expanded="false">
           <img src="img/cat.svg" alt="Ícone de rosto de um gato" />
           Gatos
-          <div id="cats-dropdown" class="dropdown-menu">
+          <div id="cats-dropdown" class="dropdown-menu" aria-hidden="true">
             <div class="arrow"></div>
             <ul class="dropdown-content font-size">
-              <a>Ração</a>
-              <a>Petiscos</a>
-              <a>Areias</a>
-              <a>Arranhadores</a>
+              <a tabindex="0">Ração</a>
+              <a tabindex="0">Petiscos</a>
+              <a tabindex="0">Areias</a>
+              <a tabindex="0">Arranhadores</a>
             </ul>
           </div>
         </li>
-        <li id="birds" class="dropdown-button font-size">
+        <li id="birds" class="dropdown-button font-size" tabindex="0" role="button" aria-pressed="false" aria-expanded="false">
           <img src="img/bird.svg" alt="Ícone de uma ave em perfil" />
           Aves
-          <div id="birds-dropdown" class="dropdown-menu">
+          <div id="birds-dropdown" class="dropdown-menu" aria-hidden="true">
             <div class="arrow"></div>
             <ul class="dropdown-content font-size">
-              <a>Alimentação</a>
-              <a>Gaiolas</a>
-              <a>Brinquedos</a>
+              <a tabindex="0">Alimentação</a>
+              <a tabindex="0">Gaiolas</a>
+              <a tabindex="0">Brinquedos</a>
             </ul>
           </div>
         </li>
@@ -104,7 +104,7 @@
     <main>
       <div id="presentation">
         <div id="presentation-left-arrow" class="arrow-button">
-          <div class="arrow left"></div>
+          <div class="arrow left" tabindex="0" role="button"></div>
         </div>
         <div id="presentation-content">
           <img
@@ -118,7 +118,7 @@
           </p>
         </div>
         <div id="presentation-right-arrow" class="arrow-button">
-          <div class="arrow right"></div>
+          <div class="arrow right" tabindex="0" role="button"></div>
         </div>
       </div>
       <div id="carousel-title" class="font-size">
@@ -127,7 +127,7 @@
       </div>
       <div id="carousel">
         <div id="carousel-left-arrow" class="arrow-button">
-          <div class="arrow left"></div>
+          <div class="arrow left" tabindex="0" role="button"></div>
         </div>
         <div id="carousel-content-wrapper">
           <div id="carousel-content">
@@ -141,7 +141,7 @@
               </p>
               <p class="product-text font-size">R$ 55,99</p>
             </a>
-            <div class="product-item">
+            <div class="product-item" href="produto/racao-pedigree.html">
               <img
                 src="img/bird-waterer.png"
                 alt="Imagem de um bebedouro para pássaros azul claro"
@@ -149,7 +149,7 @@
               <p class="product-text font-size">Bebedouro para pássaros</p>
               <p class="product-text font-size">R$ 19,99</p>
             </div>
-            <div class="product-item">
+            <div class="product-item" href="produto/racao-pedigree.html">
               <img
                 src="img/cat-scratcher.png"
                 alt="Imagem de um arranhador para gatos com bolas e penas"
@@ -157,7 +157,7 @@
               <p class="product-text font-size">Arranhador para gatos</p>
               <p class="product-text font-size">R$ 34,99</p>
             </div>
-            <div class="product-item">
+            <div class="product-item" href="produto/racao-pedigree.html">
               <img
                 src="img/dog-leash.png"
                 alt="Imagem de uma coleira de cachorro de couro vermelho"
@@ -167,7 +167,7 @@
               </p>
               <p class="product-text font-size">R$ 19,99</p>
             </div>
-            <div class="product-item">
+            <div class="product-item" href="produto/racao-pedigree.html">
               <img
                 src="img/bird-cage.png"
                 alt="Imagem de uma gaiola para pássaros azul"
@@ -175,7 +175,7 @@
               <p class="product-text font-size">Gaiola para calopsitas</p>
               <p class="product-text font-size">R$ 178,40</p>
             </div>
-            <div class="product-item">
+            <div class="product-item" href="produto/racao-pedigree.html">
               <img
                 src="img/cat-food.png"
                 alt="Imagem de um pacote de ração de gato"
@@ -183,7 +183,7 @@
               <p class="product-text font-size">Ração para gatos castrados</p>
               <p class="product-text font-size">R$ 179,99</p>
             </div>
-            <div class="product-item">
+            <div class="product-item" href="produto/racao-pedigree.html">
               <img
                 src="img/dog-ball.png"
                 alt="Imagem de bolas coloridas para cachorro"
@@ -200,17 +200,17 @@
           </div>
         </div>
         <div id="carousel-right-arrow" class="arrow-button">
-          <div class="arrow right"></div>
+          <div class="arrow right" tabindex="0" role="button"></div>
         </div>
       </div>
     </main>
 
     <footer>
       <div id="about-us">
-        <a class="font-size">Sobre a Pet's go</a>
+        <a class="font-size" tabindex="0">Sobre a Pet's go</a>
       </div>
       <div id="contact-us">
-        <a class="font-size">Fale conosco</a>
+        <a class="font-size" tabindex="0">Fale conosco</a>
       </div>
     </footer>
 

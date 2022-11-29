@@ -44,6 +44,20 @@ function banner() {
       bannerText.style.opacity = 0;
     }
   });
+
+  leftArrow.addEventListener("keypress", (event) => {
+    if (event.key === "Enter" || event.key == " " || event.key == "Spacebar") {
+      event.preventDefault();
+      leftArrow.click();
+    }
+  });
+
+  rightArrow.addEventListener("keypress", (event) => {
+    if (event.key === "Enter" || event.key == " " || event.key == "Spacebar") {
+      event.preventDefault();
+      rightArrow.click();
+    }
+  });
 }
 
 function carousel() {
@@ -51,43 +65,84 @@ function carousel() {
   const leftArrow = document.getElementById("carousel-left-arrow");
   const rightArrow = document.getElementById("carousel-right-arrow");
 
+  Array.from(products.children).forEach((value, index, array) => {
+    value.tabIndex = (index < 4) ? "0" : "-1";
+    value.setAttribute("aria-hidden", !(index < 4));
+  });
+
   leftArrow.addEventListener("click", () => {
     products.style.transform = "translateX(0%)";
+    Array.from(products.children).forEach((value, index, array) => {
+      value.tabIndex = (index < 4) ? "0" : "-1";
+      value.setAttribute("aria-hidden", !(index < 4));
+    });
   });
 
   rightArrow.addEventListener("click", () => {
     products.style.transform = "translateX(-50%)";
+    Array.from(products.children).forEach((value, index, array) => {
+      value.tabIndex = !(index < 4) ? "0" : "-1";
+      value.setAttribute("aria-hidden", index < 4);
+    });
+  });
+
+  leftArrow.addEventListener("keypress", (event) => {
+    if (event.key === "Enter" || event.key == " " || event.key == "Spacebar") {
+      event.preventDefault();
+      leftArrow.click();
+    }
+  });
+
+  rightArrow.addEventListener("keypress", (event) => {
+    if (event.key === "Enter" || event.key == " " || event.key == "Spacebar") {
+      event.preventDefault();
+      rightArrow.click();
+    }
   });
 }
 
 function dropdown() {
-  const dogsButton = document.getElementById("dogs");
-  const catsButton = document.getElementById("cats");
-  const birdsButton = document.getElementById("birds");
+  const dropdownElements = [
+    {
+      button: document.getElementById("dogs"),
+      dropdown: document.getElementById("dogs-dropdown")
+    },
+    {
+      button: document.getElementById("cats"),
+      dropdown: document.getElementById("cats-dropdown")
+    },
+    {
+      button: document.getElementById("birds"),
+      dropdown: document.getElementById("birds-dropdown")
+    },
+  ];
 
-  const dogsDropdown = document.getElementById("dogs-dropdown");
-  const catsDropdown = document.getElementById("cats-dropdown");
-  const birdsDropdown = document.getElementById("birds-dropdown");
+  dropdownElements.forEach((value, index, array) => {
+    value.button.addEventListener("mouseover", () => {
+      value.dropdown.style.display = "block";
+      value.dropdown.setAttribute("aria-hidden", "false");
+      value.button.setAttribute("aria-pressed", "true");
+      value.button.setAttribute("aria-expanded", "true");
+    });
 
-  dogsButton.addEventListener("mouseover", () => {
-    dogsDropdown.style.display = "block";
-  });
-  dogsButton.addEventListener("mouseout", () => {
-    dogsDropdown.style.display = "none";
-  });
-
-  catsButton.addEventListener("mouseover", () => {
-    catsDropdown.style.display = "block";
-  });
-  catsButton.addEventListener("mouseout", () => {
-    catsDropdown.style.display = "none";
-  });
-
-  birdsButton.addEventListener("mouseover", () => {
-    birdsDropdown.style.display = "block";
-  });
-  birdsButton.addEventListener("mouseout", () => {
-    birdsDropdown.style.display = "none";
+    value.button.addEventListener("mouseout", () => {
+      value.dropdown.style.display = "none";
+      value.dropdown.setAttribute("aria-hidden", "true");
+      value.button.setAttribute("aria-pressed", "false");
+      value.button.setAttribute("aria-expanded", "false");
+    });
+    
+    value.button.addEventListener("keypress", (event) => {
+      if (event.key === "Enter" || event.key == " " || event.key == "Spacebar") {
+        event.preventDefault();
+  
+        const pressed = value.button.getAttribute("aria-pressed") === "true";
+        value.dropdown.style.display = (!pressed) ? "block" : "none";
+        value.dropdown.setAttribute("aria-hidden", pressed);
+        value.button.setAttribute("aria-pressed", !pressed);
+        value.button.setAttribute("aria-expanded", !pressed);
+      }
+    });
   });
 }
 
