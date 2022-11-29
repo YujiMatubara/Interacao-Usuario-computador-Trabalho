@@ -114,9 +114,8 @@ li {
 .header-functions {
   display: flex;
   align-items: center;
-  margin-left: 2vw;
-  width: 10vw;
-  min-width: 200px;
+  margin: 0px 2vw;
+  width: fit-content;
 }
 
 .header-functions li {
@@ -167,18 +166,16 @@ nav {
   align-items: center;
   gap: 12px;
   right: 1vw;
-  padding-left: 8em;
 }
 
 .font-size-adjustment button {
   height: 70px;
+  width: fit-content;
   border: 0;
   border-radius: 20px;
   background-color: #0d2149;
-  padding: 20px 20px;
+  padding: 20px 5px;
   cursor: pointer;
-  padding-top: 2.5em;
-  width: 30%;
 }
 
 .dropdown-list {
@@ -448,7 +445,7 @@ footer a {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 780px)
 {
   .font-size-adjustment {
     gap: 10px;
