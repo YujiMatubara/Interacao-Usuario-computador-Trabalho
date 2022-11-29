@@ -549,6 +549,7 @@ footer a {/*Letra A maiúscula ao lado de seta para baixo*/
   .product-text {
     font-size: 8px;
     line-height: 20px;
+    width: 100%;
   }
 
   .product-item img {
