@@ -445,28 +445,32 @@ footer a {
   cursor: pointer;
 }
 
-@media screen and (max-width: 780px)
-{
-  .font-size-adjustment {
-    gap: 10px;
-    padding-left: 20%;
+@media screen and (max-width: 780px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .logo {
+    padding: 1.5rem;
+  }
+
+  .logo img {
+    width: 45vw;
+    max-height: 100px;
   }
 
   .search-bar {
-    width: 90%;
+    width: 80%;
     height: 0.7em;
     border-radius: 20px;
   }
 
-  .search-bar img {
-    position: absolute;
-    bottom: 2px;
-    right: 15px;
-  }
-
   .header-functions li {
     padding: 4px 40px;
-    height: 70%;
   }
 
   .header-functions li img {
@@ -475,24 +479,40 @@ footer a {
   }
 
   .header-functions li p {
-    font-size: 0px;
+    font-size: 20px;
   }
 
-  .header {
-    height: 190px;
+  .font-size-adjustment {
+    gap: 10px;
+  }
+
+  .font-size-adjustment button {
+    padding: 10px;
+    height: auto;
+  }
+
+  .font-size-adjustment button img {
+    width: 40px;
+    height: 40px;
   }
 
   nav {
-    margin-top: 22vh;
-    padding-top: 10px;
+    margin-top: 30vh;
+    padding: 10px 10px 0 10px;
     display: flex;
   }
-  
+
   .dropdown-list li {
     padding: 10px 8px;
     margin: 6px;
-  };
-  
+    font-size: 20px;
+  }
+
+  .dropdown-list li img {
+    width: 40px;
+    height: 40px;
+  }
+
   /*arruma aqui pra mim que eu não consegui*/
   .dropdown-content {
     width: 100%;
@@ -504,5 +524,10 @@ footer a {
   #banner-text {
     font-size: 22px;
     line-height: 40px;
+  }
+
+  footer {
+    height: 100px;
+    font-size: 20px;
   }
 }
