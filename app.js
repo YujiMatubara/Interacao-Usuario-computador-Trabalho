@@ -86,6 +86,10 @@ function carousel() {
   }
 
   function updateItemsShowing() {
+    if ((currentIndex + currentSize) > products.children.length) {
+      currentIndex = products.children.length - currentSize;
+    }
+
     Array.from(products.children).forEach((value, index, array) => {
       value.tabIndex = (productIsShowing(index)) ? "0" : "-1";
       value.setAttribute("aria-hidden", !(productIsShowing(index)));
@@ -98,6 +102,8 @@ function carousel() {
   leftArrow.addEventListener("click", () => {
     if ((currentIndex - currentSize) >= 0) {
       currentIndex -= currentSize;
+    } else {
+      currentIndex = 0;
     }
 
     products.style.transform = "translateX(" + (currentIndex * (-12.5)) + "%)";
@@ -107,6 +113,8 @@ function carousel() {
   rightArrow.addEventListener("click", () => {
     if ((currentIndex + currentSize) < products.children.length) {
       currentIndex += currentSize;
+    } else {
+      currentIndex = products.children.length - currentSize;
     }
     
     products.style.transform = "translateX(" + (currentIndex * (-12.5)) + "%)";
