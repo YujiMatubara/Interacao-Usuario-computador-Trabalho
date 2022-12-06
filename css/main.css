@@ -188,7 +188,7 @@ li {
 }
 
 .product-categories {
-  margin-top: max(80px, 10vw);
+  margin-top: max(160px, 10vw);
   padding-top: 12px;
   display: flex;
 }
