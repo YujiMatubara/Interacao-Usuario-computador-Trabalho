@@ -524,14 +524,6 @@ footer a {
     height: fit-content;
   }
 
-  nav {
-    position: relative;
-    margin-top: 230px;
-    padding-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .dropdown-list {
     flex-wrap: wrap;
   }
@@ -539,6 +531,10 @@ footer a {
   #banner-text {
     font-size: 22px;
     line-height: 40px;
+  }
+
+  .product-categories {
+    margin-top: max(250px, 12vw);
   }
 }
 
