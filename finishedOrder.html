@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="css/finishedOrder.css" />
+
+    <title>Login | Pet's Go</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="Logo da Pet's Go" />
+      </a>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar" class="font-size" />
+        <button type="submit">
+          <img src="img/magnifying-glass.svg" alt="Ícone de uma luneta" />
+        </button>
+      </div>
+
+      <ul class="header-functions">
+        <li>
+          <button type="button" class="font-size">
+            <img
+              src="img/login.png"
+              alt="Ícone de silhueta de uma pessoa"
+              width="50px"
+            />
+            <p>Entrar</p>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="font-size">
+            <img src="img/cart.png" alt="Ícone de um carrinho" width="50px" />
+            <p>Carrinho</p>
+          </button>
+        </li>
+      </ul>
+
+      <div class="font-size-adjustment">
+        <button id="font-size-increase">
+          <img
+            src="img/font-size-increase.svg"
+            alt="Letra A maiúscula ao lado de seta para cima"
+          />
+        </button>
+        <button id="font-size-decrease">
+          <img
+            src="img/font-size-decrease.svg"
+            alt="Letra A maiúscula ao lado de seta para baixo"
+          />
+        </button>
+      </div>
+    </header>
+
+    <main>
+        <div class="order">
+            <p id="title">Parabéns</p>
+            <div class="description">
+                Seu pedido foi confirmado e enviamos um e-mail para <font color="#FF6542">wallace*****@gmail.com</font> com os detalhes da sua compra
+            </div>
+            <img
+            src="img/finishedOrder.jpg"
+            alt="Imagem de um cachorro segurando uma cesta de compras com a boca"
+            id="finishedOrder"
+            />
+            <div class="button">
+                Acompanhar pedido
+            </div>
+            <div class="button">
+                Continuar comprando
+            </div>
+        </div>
+    </main>
+
+    <footer>
+      <div id="about-us">
+        <a class="font-size" tabindex="0">Sobre a Pet's go</a>
+      </div>
+      <div id="contact-us">
+        <a class="font-size" tabindex="0">Fale conosco</a>
+      </div>
+    </footer>
+  </body>
+</html>
