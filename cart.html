@@ -11,38 +11,95 @@
   </head>
   <body>
     <header class="header">
-      <a class="logo" href="index.html">
-        <img src="img/logo.svg" alt="Logo da Pet's Go" />
-      </a>
-
-      <div class="search-bar">
-        <input type="text" placeholder="Pesquisar" class="font-size" />
-        <button type="submit">
-          <img src="img/magnifying-glass.svg" alt="Ícone de uma luneta" />
-        </button>
+      <div class="top-bar">
+        <div>
+          <nav>
+            <ul class="keyboard-nav">
+              <li>
+                <a
+                  class="nav-link"
+                  title="Ir para conteúdo [1]"
+                  href="#main"
+                  accesskey="1"
+                  >Ir para conteúdo [1]</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  title="Ir para menu [2]"
+                  href="#navbar"
+                  accesskey="2"
+                  >Ir para menu [2]</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  title="Ir para rodapé [3]"
+                  href="#footer"
+                  accesskey="3"
+                  >Ir para rodapé [3]</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <div class="font-size-adjustment">
+            <button id="font-size-increase">
+              <img
+                src="img/font-size-increase.svg"
+                alt="Letra A maiúscula ao lado de seta para cima"
+                height="20px"
+                width="20px"
+              />
+            </button>
+            <button id="font-size-decrease">
+              <img
+                src="img/font-size-decrease.svg"
+                alt="Letra A maiúscula ao lado de seta para baixo"
+                height="20px"
+                width="20px"
+              />
+            </button>
+          </div>
+        </div>
       </div>
+      <div class="nav-bar">
+        <a class="logo" href="index.html">
+          <img src="img/logo.svg" alt="Logo da Pet's Go" />
+        </a>
 
-      <ul class="header-functions">
-        <li>
-          <button type="button" class="font-size">
-            <img
-              src="img/login.png"
-              alt="Ícone de silhueta de uma pessoa"
-              width="50px"
-            />
-            Entrar
+        <div class="search-bar">
+          <input type="text" placeholder="Pesquisar" class="font-size" />
+          <button type="submit">
+            <img src="img/magnifying-glass.svg" alt="Ícone de uma luneta" />
           </button>
-        </li>
-        <li>
-          <button type="button" class="font-size">
-            <img src="img/cart.png" alt="Ícone de um carrinho" width="50px" />
-            Carrinho
-          </button>
-        </li>
-      </ul>
+        </div>
+
+        <ul class="header-functions">
+          <li>
+            <button type="button" class="font-size">
+              <img
+                src="img/login.png"
+                alt="Ícone de silhueta de uma pessoa"
+                width="50px"
+              />
+              <p>Entrar</p>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="font-size">
+              <img src="img/cart.png" alt="Ícone de um carrinho" width="50px" />
+              <p>Carrinho</p>
+            </button>
+          </li>
+        </ul>
+      </div>
     </header>
 
-    <main>
+    <main id="main">
       <div class="site-map">
         <a href="index.html">Página inicial</a>
         <img src="img/arrow-right.svg" alt="Seta para a esquerda" />
@@ -119,7 +176,7 @@
       </div>
     </main>
 
-    <footer>
+    <footer id="footer">
       <div id="about-us">
         <a class="font-size" tabindex="0">Sobre a Pet's go</a>
       </div>
