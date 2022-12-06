@@ -130,6 +130,7 @@
 }
 
 .main-button {
+  width: 100%;
   background: #0d2149;
   color: #ff6542;
   border: 2px solid #0d2149;
