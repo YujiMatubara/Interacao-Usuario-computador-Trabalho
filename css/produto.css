@@ -106,8 +106,14 @@ main {
   place-items: center;
   background-color: transparent;
   border: 0;
+  border-radius: 5px;
   padding: 8px;
   cursor: pointer;
+}
+
+.plus-minus button:disabled {
+  background: #b3b3b3;
+  cursor: not-allowed;
 }
 
 .plus-minus input[type="number"] {
