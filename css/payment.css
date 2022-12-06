@@ -3,7 +3,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-top: max(80px, 5vw);
+  margin-top: max(130px, 5vw);
   padding: 48px;
 }
 
