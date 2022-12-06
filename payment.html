@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/payment.css" />
+    <title>Login | Pet's Go</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="Logo da Pet's Go" />
+      </a>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar" class="font-size" />
+        <button type="submit">
+          <img src="img/magnifying-glass.svg" alt="Ícone de uma luneta" />
+        </button>
+      </div>
+
+      <ul class="header-functions">
+        <li>
+          <button type="button" class="font-size">
+            <img
+              src="img/login.png"
+              alt="Ícone de silhueta de uma pessoa"
+              width="50px"
+            />
+            <p>Wallace</p>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="font-size">
+            <img src="img/cart.png" alt="Ícone de um carrinho" width="50px" />
+            <p>Carrinho</p>
+          </button>
+        </li>
+      </ul>
+
+      <div class="font-size-adjustment">
+        <button id="font-size-increase">
+          <img
+            src="img/font-size-increase.svg"
+            alt="Letra A maiúscula ao lado de seta para cima"
+          />
+        </button>
+        <button id="font-size-decrease">
+          <img
+            src="img/font-size-decrease.svg"
+            alt="Letra A maiúscula ao lado de seta para baixo"
+          />
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="site-map">
+        <a href="index.html">Página inicial</a>
+        <img src="img/arrow-right.svg" alt="Seta para a esquerda" />
+        <a href="cart.html">Carrinho</a>
+        <img src="img/arrow-right.svg" alt="Seta para a esquerda" />
+        <a href="#">Pagamento</a>
+      </div>
+
+      <ul class="card payment-text full-width" id="payment-total">
+		    <li>
+          <h4 class="left-text">Subtotal (1 produto)</h4><h4 class="right-text">R$55,99</h4>
+        </li>
+        <li>
+          <h4 class="left-text">Cupom</h4><h4 class="left-text">A73rj437J</h4><h4 class="right-text">-10% R$5,60</h4>
+        </li>
+        <li>
+          <h4 class="left-text">Frete</h4><h4 class="left-text">CEP: 07266-070</h4><h4 class="right-text">R$11,31</h4>
+        </li>
+		    <li>
+          <h2 class="left-text">Total</h2><h2 class="right-text">R$61,70</h2>
+        </il>
+	    </ul>
+	  
+	    <div class="card payment-text full-width">
+		    <h4>Endereço de entrega</h4>
+        <ul class="payment-form">
+          <li class="payment-field">
+            <h4>CEP:</h4>
+            <input type="text" name="cep" placeholder="00000-000" pattern="\d{5}-\d{3}" required aria-required="true">
+          </li>
+          <li class="payment-field">
+            <h4>Cidade:</h4>
+            <input type="text" name="cidade" required aria-required="true">
+          </li>
+          <li class="payment-field">
+            <h4>Estado:</h4>
+            <input type="text" name="estado" required aria-required="true">
+          </li>
+          <li class="payment-field">
+            <h4>Bairro/Distrito:</h4>
+            <input type="text" name="bairro" required aria-required="true">
+          </li>
+          <li class="payment-field">
+            <div>
+              <h4>Rua:</h4>
+              <input type="text" name="rua" required aria-required="true">
+            </div>
+            <div>
+              <h4>Número:</h4>
+              <input type="text" name="numero" pattern="\d{1-4}" required aria-required="true">
+            </div>
+            <div>
+              <h4>Complemento:</h4>
+              <input type="text" name="complemento" pattern="\d{1-4}">
+            </div>
+          </li>
+        </ul>
+	    </div>
+
+	    <div class="payment-options">
+	      <div class="card payment-text payment-select">
+	        <h4>Forma de pagamento:</h4>
+          <select name="payment-type" id="payment-type">
+            <option value="pix">PIX</option>
+            <option value="credit card">Cartão de crédito</option>
+          </select>
+	      </div>
+		    <div class="separator-line"></div>
+        <button class="main-button" href="login.html">Finalizar a compra</button>
+	    </div>
+      <div class="card payment-text full-width">
+    </main>
+
+    <footer>
+      <div id="about-us">
+        <a class="font-size" tabindex="0">Sobre a Pet's go</a>
+      </div>
+      <div id="contact-us">
+        <a class="font-size" tabindex="0">Fale conosco</a>
+      </div>
+    </footer>
+  </body>
+</html>
