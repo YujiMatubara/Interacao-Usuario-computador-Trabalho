@@ -66,68 +66,128 @@
       </div>
 
       <ul class="card payment-text full-width" id="payment-total">
-		    <li>
-          <h4 class="left-text">Subtotal (1 produto)</h4><h4 class="right-text">R$55,99</h4>
+        <li>
+          <h4 class="left-text">Subtotal (1 produto)</h4>
+          <h4 class="right-text">R$55,99</h4>
         </li>
         <li>
-          <h4 class="left-text">Cupom</h4><h4 class="left-text">A73rj437J</h4><h4 class="right-text">-10% R$5,60</h4>
+          <h4 class="left-text">Cupom</h4>
+          <h4 class="left-text">A73rj437J</h4>
+          <h4 class="right-text">-10% R$5,60</h4>
         </li>
         <li>
-          <h4 class="left-text">Frete</h4><h4 class="left-text">CEP: 07266-070</h4><h4 class="right-text">R$11,31</h4>
+          <h4 class="left-text">Frete</h4>
+          <h4 class="left-text">CEP: 07266-070</h4>
+          <h4 class="right-text">R$11,31</h4>
         </li>
-		    <li>
-          <h2 class="left-text">Total</h2><h2 class="right-text">R$61,70</h2>
-        </il>
-	    </ul>
-	  
-	    <div class="card payment-text full-width">
-		    <h4>Endereço de entrega</h4>
+        <li>
+          <h2 class="left-text">Total</h2>
+          <h2 class="right-text">R$61,70</h2>
+        </li>
+      </ul>
+
+      <div class="card payment-text full-width">
+        <h4>Endereço de entrega</h4>
         <ul class="payment-form">
           <li class="payment-field">
             <h4>CEP:</h4>
-            <input type="text" name="cep" placeholder="Digite o CEP" pattern="\d{5}-\d{3}" required aria-required="true">
+            <input
+              type="text"
+              name="cep"
+              placeholder="Digite o CEP"
+              pattern="\d{5}-\d{3}"
+              required
+              aria-required="true"
+            />
           </li>
           <li class="payment-field">
             <h4>Cidade:</h4>
-            <input type="text" name="cidade" placeholder="Digite a cidade" required aria-required="true">
+            <input
+              type="text"
+              name="cidade"
+              placeholder="Digite a cidade"
+              required
+              aria-required="true"
+            />
           </li>
           <li class="payment-field">
             <h4>Estado:</h4>
-            <input type="text" name="estado" placeholder="Digite o estado" required aria-required="true">
+            <input
+              type="text"
+              name="estado"
+              placeholder="Digite o estado"
+              required
+              aria-required="true"
+            />
           </li>
           <li class="payment-field">
             <h4>Bairro:</h4>
-            <input type="text" name="bairro" placeholder="Digite o bairro" required aria-required="true">
+            <input
+              type="text"
+              name="bairro"
+              placeholder="Digite o bairro"
+              required
+              aria-required="true"
+            />
           </li>
           <li class="payment-field">
             <div>
               <h4>Rua:</h4>
-              <input type="text" name="rua" placeholder="Digite a rua" required aria-required="true">
+              <input
+                type="text"
+                name="rua"
+                placeholder="Digite a rua"
+                required
+                aria-required="true"
+              />
             </div>
             <div>
               <h4>Número:</h4>
-              <input type="text" name="numero" placeholder="Digite o número" pattern="\d{1-4}" required aria-required="true">
+              <input
+                type="text"
+                name="numero"
+                placeholder="Digite o número"
+                pattern="\d{1-4}"
+                required
+                aria-required="true"
+              />
             </div>
             <div>
               <h4>Complemento:</h4>
-              <input type="text" name="complemento" placeholder="Digite o complemento, se houver" pattern="\d{1-4}">
+              <input
+                type="text"
+                name="complemento"
+                placeholder="Digite o complemento, se houver"
+                pattern="\d{1-4}"
+              />
             </div>
           </li>
         </ul>
-	    </div>
+      </div>
 
-	    <div class="payment-options">
-	      <div class="card payment-text payment-select">
-	        <h4>Forma de pagamento:</h4>
+      <div class="payment-options">
+        <div class="card payment-text payment-select">
+          <h4>Forma de pagamento:</h4>
           <select name="payment-type" id="payment-type">
             <option value="pix">PIX</option>
             <option value="credit card">Cartão de crédito</option>
           </select>
-	      </div>
-		    <div class="separator-line"></div>
-        <button class="main-button" href="login.html">Finalizar a compra</button>
-	    </div>
-      <div class="card payment-text full-width">
+        </div>
+        <div class="separator-line"></div>
+        <button class="main-button" href="login.html">
+          Finalizar a compra
+        </button>
+      </div>
+      <div class="card payment-text full-width payment-pix">
+        <img src="img/qr-code.svg" alt="Código QR" />
+        <div class="payment-pix-text">
+          <p>Utilize a câmera para copiar o código de pagamento PIX</p>
+          <p>
+            PIX copia e cola:
+            00020126580014br.gov.bcb.pix0136123e4567-e12b-12d1-a456-4266554400005204000053039865802BR5913Fulano-de-Tal6008BRASILIA62070503***63041D3D
+          </p>
+        </div>
+      </div>
     </main>
 
     <footer>
@@ -147,7 +207,7 @@
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
     </script>
   </body>
 </html>

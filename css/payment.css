@@ -13,7 +13,7 @@ main {
   gap: 12px;
   margin-bottom: 20px;
 }
-  
+
 .site-map a {
   text-decoration: none;
   font-size: 24px;
@@ -141,7 +141,8 @@ button:hover,
   flex-wrap: nowrap;
 }
 
-#payment-total h2, #payment-total h4 {
+#payment-total h2,
+#payment-total h4 {
   flex-grow: 1;
   flex-basis: 33%;
 }
@@ -193,4 +194,24 @@ button:hover,
   min-width: 30vw;
   flex-grow: 1;
   width: auto;
+}
+
+.payment-pix {
+  display: flex;
+  gap: 32px;
+}
+
+.payment-pix-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.payment-pix-text p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+
+  color: #0d2149;
 }
