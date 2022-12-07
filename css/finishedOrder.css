@@ -1,87 +1,93 @@
-.order{
-    width:70%;
-    height: 100%;
-    background-color: #D9D9D9;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
-    margin-top: 140px;
-    margin-left: 15%;
-    padding-bottom: 40px;
+.order {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 30%;
+  margin-top: 180px;
+  padding: 32px 100px;
+  border-radius: 30px;
+  background-color: #d9d9d9;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.order img {
+  height: 30vh;
 }
 
 #title {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 36px;
-    text-align: center;
-    color: #0D2149;
-    margin-bottom: 20px;
-    margin-top: 40px;    
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #0d2149;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .description {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: center;
-    color: #0D2149;
-    margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  color: #0d2149;
+  margin-bottom: 20px;
 }
 
 .button {
-    background: #0D2149;
-    border: 2px solid #FF6542;
-    border-radius: 10px;
-    padding: 10px;
-    font-weight: 600;
-    font-size: larger;
-    margin-top: 20px;
-    color: #FF6542;
+  background: #0d2149;
+  border: 2px solid #ff6542;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: larger;
+  margin-top: 20px;
+  color: #ff6542;
 }
 
 .main-button {
-    width: 100%;
-    background: #0d2149;
-    color: #ff6542;
-    border: 2px solid #0d2149;
+  width: 100%;
+  background: #0d2149;
+  color: #ff6542;
+  border: 2px solid #0d2149;
 }
 
 .ghost-button {
-    background: transparent;
-    color: #0d2149;
-    border: 2px solid #ff6542;
+  background: transparent;
+  color: #0d2149;
+  border: 2px solid #ff6542;
 }
 
 .ghost-button:hover {
-    background: #ff6542;
+  background: #ff6542;
 }
 
 .card-buttons {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-buttons button {
-    font-family: "Roboto", sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
 
-    padding: 4px;
+  padding: 10px;
 
-    border-radius: 10px;
+  border-radius: 10px;
 
-    cursor: pointer;
-    transition: all 0.25s ease;
+  cursor: pointer;
+  transition: all 0.25s ease;
 
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .card-buttons button:hover {
-    filter: opacity(0.8);
+  filter: opacity(0.8);
 }
