@@ -34,7 +34,8 @@ main {
   width: 100%;
 }
 
-.payment-text h4 {
+.payment-text h4,
+.payment-text label {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;

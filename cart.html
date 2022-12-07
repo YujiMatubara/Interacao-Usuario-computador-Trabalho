@@ -140,9 +140,17 @@
           </div>
 
           <div class="card look-up shipping">
-            <h2 class="font-size">Frete e prazo</h2>
+            <label class="font-size" for="cep">
+              Digite seu CEP para calcular frete e prazo
+            </label>
             <div>
-              <input class="font-size" type="text" placeholder="Digite o CEP" />
+              <input
+                name="cep"
+                class="font-size"
+                type="text"
+                placeholder="00000-000"
+                pattern="\d{5}-\d{3}"
+              />
               <button class="main-button font-size">Buscar</button>
             </div>
           </div>
@@ -171,9 +179,10 @@
           </div>
 
           <div class="card look-up discount">
-            <h2 class="font-size">Cupom de disconto</h2>
+            <label class="font-size" for="coupon">Cupom de disconto</label>
             <div>
               <input
+                name="coupon"
                 class="font-size"
                 type="text"
                 placeholder="Digite o cupom"
