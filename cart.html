@@ -101,9 +101,9 @@
 
     <main id="main">
       <div class="site-map">
-        <a href="index.html">Página inicial</a>
+        <a class="font-size" href="index.html">Página inicial</a>
         <img src="img/arrow-right.svg" alt="Seta para a esquerda" />
-        <a href="#">Carrinho</a>
+        <a class="font-size" href="#">Carrinho</a>
       </div>
 
       <div class="content">
@@ -113,12 +113,13 @@
               src="img/dog-food-small.png"
               alt="Imagem de um pacote de ração de cachorro"
             />
-            <h2>Ração Pedigree para cães adultos</h2>
+            <h2 class="font-size">Ração Pedigree para cães adultos</h2>
             <div class="plus-minus">
               <button disabled>
                 <img src="img/minus.svg" alt="Sinal de menos" />
               </button>
               <input
+                class="font-size"
                 type="number"
                 value="1"
                 min="1"
@@ -128,7 +129,7 @@
               />
               <button><img src="img/plus.svg" alt="Sinal de mais" /></button>
             </div>
-            <h4>R$ 55,99</h4>
+            <h4 class="font-size">R$ 55,99</h4>
             <button id="delete-button" title="Excluir">
               <img
                 src="img/trash-bin.svg"
@@ -139,10 +140,10 @@
           </div>
 
           <div class="card look-up shipping">
-            <h2>Frete e prazo</h2>
+            <h2 class="font-size">Frete e prazo</h2>
             <div>
-              <input type="text" placeholder="Digite o CEP" />
-              <button class="main-button">Buscar</button>
+              <input class="font-size" type="text" placeholder="Digite o CEP" />
+              <button class="main-button font-size">Buscar</button>
             </div>
           </div>
         </div>
@@ -151,25 +152,33 @@
           <div class="card total-price">
             <div id="price-wrapper">
               <div class="price">
-                <h4>Subtotal (1 produto)</h4>
-                <h4>R$ 55,99</h4>
+                <h4 class="font-size">Subtotal (1 produto)</h4>
+                <h4 class="font-size">R$ 55,99</h4>
               </div>
               <div class="price">
-                <h2>Total</h2>
-                <h2>R$ 55,99</h2>
+                <h2 class="font-size">Total</h2>
+                <h2 class="font-size">R$ 55,99</h2>
               </div>
             </div>
             <div class="button-stack">
-              <a class="main-button" href="login.html">Finalizar a compra</a>
-              <button class="ghost-button">Escolher mais produtos</button>
+              <a class="main-button font-size" href="login.html"
+                >Finalizar a compra</a
+              >
+              <button class="ghost-button font-size">
+                Escolher mais produtos
+              </button>
             </div>
           </div>
 
           <div class="card look-up discount">
-            <h2>Cupom de disconto</h2>
+            <h2 class="font-size">Cupom de disconto</h2>
             <div>
-              <input type="text" placeholder="Digite o cupom" />
-              <button class="main-button">Aplicar</button>
+              <input
+                class="font-size"
+                type="text"
+                placeholder="Digite o cupom"
+              />
+              <button class="main-button font-size">Aplicar</button>
             </div>
           </div>
         </div>
@@ -184,6 +193,8 @@
         <a class="font-size" tabindex="0">Fale conosco</a>
       </div>
     </footer>
+
+    <script src="fontSizeAdjustment.js"></script>
 
     <div vw class="enabled">
       <div vw-access-button class="active"></div>
