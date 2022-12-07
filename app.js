@@ -75,24 +75,23 @@ function carousel() {
     } else {
       currentSize = 4;
     }
-    console.log(currentSize);
   }
 
   getNumItems(mediaQuery);
   mediaQuery.addEventListener("change", getNumItems);
 
   function productIsShowing(index) {
-    return (index >= currentIndex && index < (currentIndex + currentSize));
+    return index >= currentIndex && index < currentIndex + currentSize;
   }
 
   function updateItemsShowing() {
-    if ((currentIndex + currentSize) > products.children.length) {
+    if (currentIndex + currentSize > products.children.length) {
       currentIndex = products.children.length - currentSize;
     }
 
     Array.from(products.children).forEach((value, index, array) => {
-      value.tabIndex = (productIsShowing(index)) ? "0" : "-1";
-      value.setAttribute("aria-hidden", !(productIsShowing(index)));
+      value.tabIndex = productIsShowing(index) ? "0" : "-1";
+      value.setAttribute("aria-hidden", !productIsShowing(index));
     });
   }
 
@@ -100,24 +99,24 @@ function carousel() {
   mediaQuery.addEventListener("change", updateItemsShowing);
 
   leftArrow.addEventListener("click", () => {
-    if ((currentIndex - currentSize) >= 0) {
+    if (currentIndex - currentSize >= 0) {
       currentIndex -= currentSize;
     } else {
       currentIndex = 0;
     }
 
-    products.style.transform = "translateX(" + (currentIndex * (-12.5)) + "%)";
+    products.style.transform = "translateX(" + currentIndex * -12.5 + "%)";
     updateItemsShowing();
   });
 
   rightArrow.addEventListener("click", () => {
-    if ((currentIndex + currentSize) < products.children.length) {
+    if (currentIndex + currentSize < products.children.length) {
       currentIndex += currentSize;
     } else {
       currentIndex = products.children.length - currentSize;
     }
-    
-    products.style.transform = "translateX(" + (currentIndex * (-12.5)) + "%)";
+
+    products.style.transform = "translateX(" + currentIndex * -12.5 + "%)";
     updateItemsShowing();
   });
 
@@ -140,15 +139,15 @@ function dropdown() {
   const dropdownElements = [
     {
       button: document.getElementById("dogs"),
-      dropdown: document.getElementById("dogs-dropdown")
+      dropdown: document.getElementById("dogs-dropdown"),
     },
     {
       button: document.getElementById("cats"),
-      dropdown: document.getElementById("cats-dropdown")
+      dropdown: document.getElementById("cats-dropdown"),
     },
     {
       button: document.getElementById("birds"),
-      dropdown: document.getElementById("birds-dropdown")
+      dropdown: document.getElementById("birds-dropdown"),
     },
   ];
 
@@ -169,54 +168,22 @@ function dropdown() {
 
     value.button.addEventListener("click", () => {
       const pressed = value.button.getAttribute("aria-pressed") === "true";
-      value.dropdown.style.display = (!pressed) ? "block" : "none";
+      value.dropdown.style.display = !pressed ? "block" : "none";
       value.dropdown.setAttribute("aria-hidden", pressed);
       value.button.setAttribute("aria-pressed", !pressed);
       value.button.setAttribute("aria-expanded", !pressed);
-    })
-    
+    });
+
     value.button.addEventListener("keypress", (event) => {
-      if (event.key === "Enter" || event.key == " " || event.key == "Spacebar") {
+      if (
+        event.key === "Enter" ||
+        event.key == " " ||
+        event.key == "Spacebar"
+      ) {
         event.preventDefault();
-        value.button.click();      
+        value.button.click();
       }
     });
-  });
-}
-
-function fontSizeAdjustment(lowerLimit = 16, upperLimit = 32) {
-  const increaseButton = document.getElementById("font-size-increase");
-  const decreaseButton = document.getElementById("font-size-decrease");
-  const texts = document.getElementsByClassName("font-size");
-
-  increaseButton.addEventListener("click", () => {
-    for (let i = 0; i < texts.length; i++) {
-      const currentFontSize = Number(
-        window
-          .getComputedStyle(texts[i])
-          .getPropertyValue("font-size")
-          .slice(0, 2)
-      );
-
-      if (currentFontSize + 4 <= upperLimit) {
-        texts[i].style.fontSize = `${currentFontSize + 4}px`;
-      }
-    }
-  });
-
-  decreaseButton.addEventListener("click", () => {
-    for (let i = 0; i < texts.length; i++) {
-      const currentFontSize = Number(
-        window
-          .getComputedStyle(texts[i])
-          .getPropertyValue("font-size")
-          .slice(0, 2)
-      );
-
-      if (currentFontSize - 4 >= lowerLimit) {
-        texts[i].style.fontSize = `${currentFontSize - 4}px`;
-      }
-    }
   });
 }
 
@@ -224,7 +191,6 @@ function main() {
   banner();
   carousel();
   dropdown();
-  fontSizeAdjustment();
 }
 
 main();

@@ -104,11 +104,11 @@
 
     <main id="main">
       <div class="site-map">
-        <a href="../index.html">Página inicial</a>
+        <a class="font-size" href="../index.html">Página inicial</a>
         <img src="../img/arrow-right.svg" alt="Seta para a esquerda" />
-        <a href="#">Cães</a>
+        <a class="font-size" href="#">Cães</a>
         <img src="../img/arrow-right.svg" alt="Seta para a esquerda" />
-        <a href="#">Ração</a>
+        <a class="font-size" href="#">Ração</a>
       </div>
 
       <div class="container">
@@ -117,7 +117,7 @@
           alt="Imagem de um pacote de ração de cachorro"
         />
         <div class="content">
-          <h1>Ração Pedigree para cães adultos</h1>
+          <h1 class="font-size">Ração Pedigree para cães adultos</h1>
           <div class="client-rating">
             <div>
               <img src="../img/star.svg" alt="Estrela" />
@@ -126,24 +126,25 @@
               <img src="../img/star.svg" alt="Estrela" />
               <img src="../img/star-hollow.svg" alt="Estrela contornada" />
             </div>
-            <p>(415 opiniões)</p>
+            <p class="font-size">(415 opiniões)</p>
           </div>
           <div class="size-select">
-            <label for="size">Selecione o tamanho:</label>
-            <select name="size" id="size">
+            <label for="size" class="font-size">Selecione o tamanho:</label>
+            <select name="size" id="size" class="font-size">
               <option value="900">900g</option>
               <option value="2700">2,7kg</option>
               <option value="10000">10kg</option>
               <option value="15000">15kg</option>
             </select>
           </div>
-          <h2>R$ 55,99</h2>
+          <h2 class="font-size">R$ 55,99</h2>
           <div class="button-stack">
             <div class="plus-minus">
               <button disabled>
                 <img src="../img/minus.svg" alt="Sinal de menos" />
               </button>
               <input
+                class="font-size"
                 type="number"
                 value="1"
                 min="1"
@@ -153,7 +154,9 @@
               />
               <button><img src="../img/plus.svg" alt="Sinal de mais" /></button>
             </div>
-            <a id="add-cart" href="../cart.html"> Adicionar ao carrinho </a>
+            <a id="add-cart" class="font-size" href="../cart.html"
+              >Adicionar ao carrinho</a
+            >
           </div>
         </div>
       </div>
@@ -161,16 +164,24 @@
       <div class="info">
         <div id="info-title">
           <img src="../img/info.svg" alt="Letra I minúscula" />
-          <h1>Informações</h1>
+          <h1 class="font-size">Informações</h1>
         </div>
         <ul>
-          <li>Com fibras naturais para ótima digestão;</li>
-          <li>Ração com vegetais e grãos selecionados;</li>
-          <li>Proteína de qualidade para músculos fortes;</li>
-          <li>Proteção à saúde: ajuda o sistema imunológico;</li>
-          <li>Com ômega 6 para saúde da pele e pelo do cão;</li>
-          <li>Vitamina E e selênio, nutrientes com ação antioxidante;</li>
-          <li>Ração seca 100% completa e balanceada para cães adultos.</li>
+          <li class="font-size">Com fibras naturais para ótima digestão;</li>
+          <li class="font-size">Ração com vegetais e grãos selecionados;</li>
+          <li class="font-size">Proteína de qualidade para músculos fortes;</li>
+          <li class="font-size">
+            Proteção à saúde: ajuda o sistema imunológico;
+          </li>
+          <li class="font-size">
+            Com ômega 6 para saúde da pele e pelo do cão;
+          </li>
+          <li class="font-size">
+            Vitamina E e selênio, nutrientes com ação antioxidante;
+          </li>
+          <li class="font-size">
+            Ração seca 100% completa e balanceada para cães adultos.
+          </li>
         </ul>
       </div>
     </main>
@@ -183,6 +194,8 @@
         <a class="font-size" tabindex="0">Fale conosco</a>
       </div>
     </footer>
+
+    <script src="../fontSizeAdjustment.js"></script>
 
     <div vw class="enabled">
       <div vw-access-button class="active"></div>
