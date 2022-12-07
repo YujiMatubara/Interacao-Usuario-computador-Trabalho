@@ -101,24 +101,25 @@
 
     <main id="main">
       <div class="site-map">
-        <a href="index.html">Página inicial</a>
+        <a class="font-size" href="index.html">Página inicial</a>
         <img src="img/arrow-right.svg" alt="Seta para a esquerda" />
-        <a href="cart.html">Carrinho</a>
+        <a class="font-size" href="cart.html">Carrinho</a>
         <img src="img/arrow-right.svg" alt="Seta para a esquerda" />
-        <a href="#">Entrar</a>
+        <a class="font-size" href="#">Entrar</a>
       </div>
 
       <div class="card">
         <div class="card-header">
           <img src="img/login.svg" alt="Silhueta de uma pessoa" />
-          <h2>Entre na sua conta</h2>
-          <h4>Identifique-se para continuar sua compra.</h4>
+          <h2 class="font-size">Entre na sua conta</h2>
+          <h4 class="font-size">Identifique-se para continuar sua compra.</h4>
         </div>
 
         <div class="fields">
           <div class="field">
-            <label for="email">E-mail</label>
+            <label class="font-size" for="email">E-mail</label>
             <input
+              class="font-size"
               type="email"
               name="email"
               id="email"
@@ -127,9 +128,10 @@
           </div>
 
           <div class="field">
-            <label for="password">Senha</label>
+            <label class="font-size" for="password">Senha</label>
             <div class="password-field">
               <input
+                class="font-size"
                 type="password"
                 name="password"
                 id="password"
@@ -141,15 +143,17 @@
             </div>
           </div>
 
-          <a href="#">Esqueci minha senha</a>
+          <a class="font-size" href="#">Esqueci minha senha</a>
         </div>
 
         <div class="card-buttons">
           <a href="payment.html">
-            <button class="main-button">Entrar</button>
+            <button class="main-button font-size">Entrar</button>
           </a>
-          <div id="line"><span>Não possui uma conta?</span></div>
-          <button class="ghost-button">Criar conta</button>
+          <div id="line">
+            <span class="font-size">Não possui uma conta?</span>
+          </div>
+          <button class="ghost-button font-size">Criar conta</button>
         </div>
       </div>
     </main>
@@ -162,6 +166,8 @@
         <a class="font-size" tabindex="0">Fale conosco</a>
       </div>
     </footer>
+
+    <script src="fontSizeAdjustment.js"></script>
 
     <div vw class="enabled">
       <div vw-access-button class="active"></div>
