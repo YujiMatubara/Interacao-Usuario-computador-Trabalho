@@ -17,13 +17,13 @@ main {
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
-  color: #0d2149;
+  color: var(--primary-color);
 }
 
 .container {
   padding: 72px 42px;
   border-radius: 20px;
-  background-color: #d9d9d9;
+  background-color: var(--card-color);
 
   display: flex;
   flex-wrap: wrap;
@@ -35,14 +35,14 @@ main {
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
-  color: #ff6542;
+  color: var(--secondary-color);
 }
 
 .container h2 {
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
-  color: #0d2149;
+  color: var(--primary-color);
 }
 
 .content {
@@ -71,7 +71,7 @@ main {
   font-size: 15px;
   font-weight: 600;
   line-height: 18px;
-  color: #0d2149;
+  color: var(--primary-color);
 }
 
 .size-select label {
@@ -85,7 +85,7 @@ main {
   font-size: 15px;
   font-weight: 600;
   line-height: 18px;
-  color: #0d2149;
+  color: var(--primary-color);
 }
 
 .button-stack {
@@ -100,7 +100,7 @@ main {
   height: fit-content;
   display: flex;
   justify-content: space-between;
-  border: 2px solid #0d2149;
+  border: 2px solid var(--primary-color);
   border-radius: 5px;
 }
 
@@ -116,7 +116,7 @@ main {
 }
 
 .plus-minus button:disabled {
-  background: #b3b3b3;
+  background: var(--disabled-color);
   cursor: not-allowed;
 }
 
@@ -126,7 +126,7 @@ main {
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
-  color: #0d2149;
+  color: var(--primary-color);
   background-color: transparent;
   border: 0;
   text-align: center;
@@ -152,8 +152,8 @@ main {
   text-align: center;
   text-decoration: none;
 
-  color: #ff6542;
-  background-color: #0d2149;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 
   border-radius: 10px;
   padding: 12px;
@@ -174,7 +174,7 @@ main {
   font-size: 32px;
   font-weight: 600;
   line-height: 39px;
-  color: #0d2149;
+  color: var(--primary-color);
 }
 
 .info ul {
@@ -187,7 +187,7 @@ main {
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
-  color: #0d2149;
+  color: var(--primary-color);
   cursor: auto;
   padding: 0;
   margin-left: 20px;

@@ -7,9 +7,19 @@
   transition: font-size 0.25s ease;
 }
 
+:root, :root.normal {
+  --primary-color: #0d2149;
+  --secondary-color: #ff6542;
+  --background-color: #f9ebe0;
+  --card-color: #d9d9d9;
+  --placeholder-color: #787878;
+  --disabled-color: #b3b3b3;
+  --topbar-color: #f0f0f0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f9ebe0;
+  background-color: var(--background-color);
   width: 100%;
   height: 100%;
 }
@@ -28,12 +38,12 @@ li {
 }
 
 ::placeholder {
-  color: #ff6542;
+  color: var(--secondary-color);
 }
 
 .top-bar {
   padding: 8px 3rem;
-  background: #f0f0f0;
+  background: var(--topbar-color);
 
   font-size: 16px;
   font-weight: 500;
@@ -68,7 +78,7 @@ li {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #0d2149;
+  background-color: var(--primary-color);
 }
 
 .logo {
@@ -81,7 +91,7 @@ li {
   line-height: 64px;
   text-align: left;
   text-decoration: none;
-  color: #ff6542;
+  color: var(--secondary-color);
   padding: 0.7rem;
 
   display: flex;
@@ -99,9 +109,9 @@ li {
 .search-bar {
   width: 30%;
   max-height: 20px;
-  color: #ff6542;
-  background-color: #f9ebe0;
-  border: 1px solid #ff6542;
+  color: var(--secondary-color);
+  background-color: var(--background-color);
+  border: 1px solid var(--secondary-color);
   border-radius: 20px;
   align-self: center;
   flex: 1 1 auto;
@@ -119,7 +129,7 @@ li {
   outline: none;
   font-size: 20px;
   line-height: 24px;
-  color: #ff6542;
+  color: var(--secondary-color);
   width: 100%;
 }
 
@@ -173,8 +183,8 @@ li {
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
-  color: #ff6542;
-  background-color: #0d2149;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .header-functions button:hover {
@@ -207,7 +217,7 @@ li {
   width: fit-content;
   border: 0;
   border-radius: 10px;
-  background-color: #0d2149;
+  background-color: var(--primary-color);
   padding: 10px;
   cursor: pointer;
 }
@@ -227,11 +237,11 @@ li {
   align-items: center;
   justify-content: space-evenly;
 
-  background-color: #0d2149;
+  background-color: var(--primary-color);
   padding: 10px;
   margin: 0px 5vw;
 
-  color: #ff6542;
+  color: var(--secondary-color);
   list-style-type: none;
   cursor: pointer;
   padding-left: 2rem;
@@ -261,7 +271,7 @@ li {
 .dropdown-menu .arrow {
   border-left: 1vw solid transparent;
   border-right: 1vw solid transparent;
-  border-bottom: 1vw solid #0d2149;
+  border-bottom: 1vw solid var(--primary-color);
   cursor: initial;
 
   top: 1px;
@@ -271,7 +281,7 @@ li {
 .dropdown-content {
   padding: 1vw;
   border-radius: 20px;
-  background-color: #0d2149;
+  background-color: var(--primary-color);
 
   width: 100%;
   display: flex;
@@ -323,7 +333,7 @@ li {
   font-size: 64px;
   font-weight: 700;
   line-height: 77px;
-  color: #0d2149;
+  color: var(--primary-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 
@@ -348,7 +358,7 @@ li {
 
   border-left: 3vw solid transparent;
   border-right: 3vw solid transparent;
-  border-bottom: 3vw solid #0d2149;
+  border-bottom: 3vw solid var(--primary-color);
 
   cursor: pointer;
 }
@@ -369,7 +379,7 @@ li {
   align-items: center;
   margin-top: 60px;
 
-  color: #0d2149;
+  color: var(--primary-color);
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
@@ -380,7 +390,7 @@ li {
   height: 7px;
   border-radius: 50px;
 
-  background-color: #0d2149;
+  background-color: var(--primary-color);
   margin: 0px 1.5vw;
 }
 
@@ -414,7 +424,7 @@ li {
   margin: 0px 1vw;
 
   text-decoration: none;
-  background-color: #0d2149;
+  background-color: var(--primary-color);
   padding: 0.5vw;
 
   overflow-x: hidden;
@@ -431,7 +441,7 @@ li {
   margin: 0px 1vw;
 
   text-decoration: none;
-  background-color: #0d2149;
+  background-color: var(--primary-color);
   padding: 0.5vw;
 
   overflow-x: hidden;
@@ -445,7 +455,7 @@ li {
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
-  color: #ff6542;
+  color: var(--secondary-color);
   width: 100%;
 }
 
@@ -458,12 +468,12 @@ li {
 #see-more {
   height: 100%;
   width: 100%;
-  background-color: #d9d9d9;
+  background-color: var(--card-color);
   border-radius: 10px;
 }
 
 #see-more p {
-  color: #0d2149;
+  color: var(--primary-color);
   font-size: 20px;
   font-weight: 600;
   line-height: 0px;
@@ -489,8 +499,8 @@ footer {
   display: inline-flex;
   align-items: center;
 
-  background-color: #0d2149;
-  color: #ff6542;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 32px;
   font-weight: 600;
   line-height: 39px;
