@@ -102,7 +102,7 @@ main {
 }
 
 .plus-minus button {
-  width: 30%;
+  width: 33px;
   display: grid;
   place-items: center;
   background-color: transparent;
@@ -118,7 +118,7 @@ main {
 }
 
 .plus-minus input[type="number"] {
-  width: 36%;
+  width: 34px;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;

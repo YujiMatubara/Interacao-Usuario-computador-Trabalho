@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -100,6 +101,7 @@ button:hover,
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .product h2 {
@@ -114,6 +116,14 @@ button:hover,
   font-size: 24px;
   line-height: 29px;
   color: #0d2149;
+}
+
+.product > div {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 20px;
+  flex-grow: 1;
 }
 
 #delete-button {
@@ -166,4 +176,20 @@ button:hover,
 
 .button-stack a {
   width: 100%;
+}
+
+@media screen and (max-width: 1150px) {
+  .content {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  main {
+    margin-top: max(270px, 12vw);
+  }
+
+  .card {
+    padding: 20px 10px;
+  }
 }

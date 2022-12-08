@@ -114,29 +114,31 @@
               alt="Imagem de um pacote de ração de cachorro"
             />
             <h2 class="font-size">Ração Pedigree para cães adultos</h2>
-            <div class="plus-minus">
-              <button disabled>
-                <img src="img/minus.svg" alt="Sinal de menos" />
+            <div>
+              <div class="plus-minus">
+                <button disabled>
+                  <img src="img/minus.svg" alt="Sinal de menos" />
+                </button>
+                <input
+                  class="font-size"
+                  type="number"
+                  value="1"
+                  min="1"
+                  placeholder="#"
+                  pattern="[0-9]*"
+                  title="Quantidade do produto a ser adicionada ao carrinho"
+                />
+                <button><img src="img/plus.svg" alt="Sinal de mais" /></button>
+              </div>
+              <h4 class="font-size">R$ 55,99</h4>
+              <button id="delete-button" title="Excluir">
+                <img
+                  src="img/trash-bin.svg"
+                  alt="Ícone de lixeira"
+                  width="24px"
+                />
               </button>
-              <input
-                class="font-size"
-                type="number"
-                value="1"
-                min="1"
-                placeholder="#"
-                pattern="[0-9]*"
-                title="Quantidade do produto a ser adicionada ao carrinho"
-              />
-              <button><img src="img/plus.svg" alt="Sinal de mais" /></button>
             </div>
-            <h4 class="font-size">R$ 55,99</h4>
-            <button id="delete-button" title="Excluir">
-              <img
-                src="img/trash-bin.svg"
-                alt="Ícone de lixeira"
-                width="24px"
-              />
-            </button>
           </div>
 
           <div class="card look-up shipping">
