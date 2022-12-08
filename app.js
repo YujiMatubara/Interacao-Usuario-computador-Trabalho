@@ -93,6 +93,8 @@ function carousel() {
       value.tabIndex = productIsShowing(index) ? "0" : "-1";
       value.setAttribute("aria-hidden", !productIsShowing(index));
     });
+
+    products.style.transform = "translateX(" + currentIndex * -12.5 + "%)";
   }
 
   updateItemsShowing();
@@ -104,8 +106,7 @@ function carousel() {
     } else {
       currentIndex = 0;
     }
-
-    products.style.transform = "translateX(" + currentIndex * -12.5 + "%)";
+    
     updateItemsShowing();
   });
 
@@ -116,7 +117,6 @@ function carousel() {
       currentIndex = products.children.length - currentSize;
     }
 
-    products.style.transform = "translateX(" + currentIndex * -12.5 + "%)";
     updateItemsShowing();
   });
 
