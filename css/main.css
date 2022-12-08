@@ -582,6 +582,10 @@ footer a {
 }
 
 @media (max-width: 780px) {
+  .nav-bar {
+    justify-content: center;
+  }
+
   .dropdown-menu {
     position: relative;
     width: 100%;
