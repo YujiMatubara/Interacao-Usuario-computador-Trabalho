@@ -399,7 +399,7 @@ li {
   align-items: center;
   justify-content: center;
 
-  height: 20vw;
+  height: fit-content;
   margin: 5px 0px;
 }
 
@@ -427,8 +427,9 @@ li {
   background-color: var(--primary-color);
   padding: 0.5vw;
 
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  text-overflow: ellipsis;
 
   display: flex;
   flex-wrap: wrap;
@@ -445,7 +446,6 @@ li {
   padding: 0.5vw;
 
   overflow-x: hidden;
-  overflow-y: auto;
 
   display: flex;
   flex-wrap: wrap;
@@ -457,6 +457,10 @@ li {
   line-height: 24px;
   color: var(--secondary-color);
   width: 100%;
+  height: 4vw;
+
+  overflow: hidden;
+  overflow-wrap: break-word;
 }
 
 .product-item img {
@@ -517,6 +521,18 @@ footer a {
 @media screen and (max-width: 1150px) {
   .header-functions li p {
     font-size: 0px;
+  }
+
+  .product-item {
+    height: 24vw;
+  }
+
+  .product-text {
+    height: 9vw;
+  }
+
+  .product-item-see-more {
+    height: 24vw;
   }
 }
 
@@ -596,15 +612,10 @@ footer a {
   }
 
   .product-item {
-    height: 36vw;
+    height: 42vw;
     width: 30vw;
     border-radius: 10px;
     margin: 0px 1vw;
-  }
-
-  .product-text {
-    font-size: 8px;
-    line-height: 20px;
   }
 
   .product-item img {
@@ -612,8 +623,13 @@ footer a {
     height: 18vw;
   }
 
+  .product-text {
+    font-size: 16px;
+    height: 16vw;
+  }
+
   #carousel {
-    height: 36vw;
+    height: fit-content;
     margin: 5px 0px;
   }
 
@@ -622,9 +638,6 @@ footer a {
   }
   
   #see-more p {
-    font-size: 8px;
-    font-weight: 600;
-    line-height: 0px;
     text-align: center;
   
     position: relative;
@@ -632,7 +645,7 @@ footer a {
   }
   
   .product-item-see-more {
-    height: 36vw;
+    height: 42vw;
     width: 30vw;
     border-radius: 10px;
     margin: 0px 1vw;
