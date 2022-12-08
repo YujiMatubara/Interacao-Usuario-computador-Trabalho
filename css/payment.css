@@ -238,3 +238,20 @@ button:hover,
 
   color: var(--primary-color);
 }
+
+@media screen and (max-width: 780px) {
+  #main {
+    margin-top: max(270px, 12vw);
+  }
+
+  .payment-options,
+  .payment-pix {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .payment-pix-text p {
+    width: 100%;
+    overflow: scroll;
+  }
+}
