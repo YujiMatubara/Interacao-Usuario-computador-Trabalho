@@ -9,6 +9,7 @@ main {
   gap: 12px;
   margin-bottom: 20px;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .site-map a {
