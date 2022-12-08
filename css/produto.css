@@ -1,6 +1,7 @@
 main {
   margin-top: calc(25vh + 12px);
   padding: 0 8vw;
+  min-height: 55vh;
 }
 
 .site-map {
