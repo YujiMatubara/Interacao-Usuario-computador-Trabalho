@@ -251,7 +251,15 @@ button:hover,
   }
 
   .payment-pix-text p {
-    width: 100%;
-    overflow: scroll;
+    width: 80%;
+    word-wrap: break-word;
+  }
+
+  .payment-select {
+    flex-wrap: wrap;
+  }
+
+  .main-button {
+    padding: 24px 0px;
   }
 }
