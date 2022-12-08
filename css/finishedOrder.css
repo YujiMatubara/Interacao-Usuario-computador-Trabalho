@@ -91,3 +91,9 @@
 .card-buttons button:hover {
   filter: opacity(0.8);
 }
+
+@media screen and (max-width: 780px) {
+  main {
+    margin-top: max(270px, 12vw);
+  }
+}
