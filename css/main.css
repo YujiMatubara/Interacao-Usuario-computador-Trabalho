@@ -7,7 +7,8 @@
   transition: font-size 0.25s ease;
 }
 
-:root, :root.normal {
+:root,
+:root.normal {
   --primary-color: #0d2149;
   --secondary-color: #ff6542;
   --background-color: #f9ebe0;
@@ -15,6 +16,7 @@
   --placeholder-color: #787878;
   --disabled-color: #b3b3b3;
   --topbar-color: #f0f0f0;
+  --green: #34c759;
 }
 
 body {
@@ -640,14 +642,14 @@ footer a {
   #carousel-content-wrapper {
     width: 66vw;
   }
-  
+
   #see-more p {
     text-align: center;
-  
+
     position: relative;
     top: 40%;
   }
-  
+
   .product-item-see-more {
     height: 42vw;
     width: 30vw;

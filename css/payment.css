@@ -34,11 +34,16 @@ main {
   width: 100%;
 }
 
+#divider {
+  width: 100%;
+  border: 2px solid var(--secondary-color);
+}
+
 .payment-text h4,
 .payment-text label {
   font-weight: 700;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 29px;
   color: var(--primary-color);
 }
 
@@ -130,16 +135,26 @@ button:hover,
   padding: 10px 20px;
 }
 
+#title {
+  margin-bottom: 16px;
+
+  font-size: 24px;
+}
+
 #payment-total {
   display: flex;
   flex-wrap: wrap;
+  gap: 8px;
 }
 
 #payment-total li {
-  padding: 15px 0px;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
+}
+
+#payment-total hr {
+  margin: 16px 0;
 }
 
 #payment-total h2,
@@ -160,25 +175,33 @@ button:hover,
   text-align: right;
 }
 
+#green {
+  color: var(--green);
+}
+
 .payment-form {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
 .payment-field {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   flex-grow: 1;
-  align-items: center;
+  align-items: flex-start;
   gap: 5px;
 
-  width: fit-content;
-  padding: 5px 0px;
+  width: 100%;
+  padding: 5px 0;
 }
 
 .payment-field input {
   flex-grow: 1;
-  width: auto;
+  width: 100%;
+  margin-right: 10px;
+  box-sizing: border-box;
 }
 
 .payment-field div {
@@ -191,10 +214,9 @@ button:hover,
   width: fit-content;
 }
 
-.payment-field input[name="rua"] {
-  min-width: 30vw;
-  flex-grow: 1;
-  width: auto;
+.two-fields {
+  display: flex;
+  gap: 12px;
 }
 
 .payment-pix {
