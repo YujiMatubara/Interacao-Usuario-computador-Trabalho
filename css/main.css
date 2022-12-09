@@ -238,6 +238,10 @@ li {
   filter: invert(73%) sepia(61%) saturate(6081%) hue-rotate(332deg) brightness(99%) contrast(104%);
 }
 
+.recolor {
+  filter: invert(73%) sepia(61%) saturate(6081%) hue-rotate(332deg) brightness(99%) contrast(104%);
+}
+
 .dropdown-list {
   display: flex;
   align-items: center;
