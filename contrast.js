@@ -1,8 +1,10 @@
 function contrastButton() {
   const contrast = document.getElementById("contrast-button");
+  let isOn = false;
 
   contrast.addEventListener("click", () => {
-    document.documentElement.className = (document.documentElement.className !== "contrast") ? "contrast" : "normal";
+    document.documentElement.style.filter = (isOn) ? "" : "grayscale(100%)";
+    isOn = !isOn;
   });
 }
 
