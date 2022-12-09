@@ -19,6 +19,16 @@
   --green: #34c759;
 }
 
+:root.contrast {
+  --primary-color: black;
+  --secondary-color: #808080;
+  --background-color: #f9ebe0;
+  --card-color: #d9d9d9;
+  --placeholder-color: #787878;
+  --disabled-color: #b3b3b3;
+  --topbar-color: #f0f0f0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--background-color);
@@ -222,6 +232,10 @@ li {
   background-color: var(--primary-color);
   padding: 10px;
   cursor: pointer;
+}
+
+#contrast-button img {
+  filter: invert(73%) sepia(61%) saturate(6081%) hue-rotate(332deg) brightness(99%) contrast(104%);
 }
 
 .dropdown-list {
