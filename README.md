@@ -5,7 +5,7 @@
 </div>
 
 # Pet's Go
-E-commerce de artigos para animais de estimação, desenvolvido como trabalho para a disciplina de Interação Usuário-computador.
+E-commerce de artigos para animais de estimação, desenvolvido como trabalho na disciplina de Interação Usuário-computador.
 
 ### Sobre
 - SCC0260 - Interação Usuário-computador
